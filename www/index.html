@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <title>Womenovation</title>
+</head>
+<body>
+    <header class="nav">
+        <a href="#" class="navigation__logo-box">
+            <img src="img/logo.png" alt="Womenovation Foundation Logo" class="nav__logo" />
+        </a>
+
+        <nav class="nav__main">
+            <ul class="nav__list">
+                <li class="dropdown">
+                    <a href="#" class="nav__item">About us</a> <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="about.html">VISION & MISSION </a>
+                        <a href="about.html">BOARD OF TRUSTEES & FRIENDS</a>
+                        <a href="about.html">MANAGEMENT & TEAM</a>
+                        <a href="about.html">PARTNERS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav__item">Our Work</a> <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">PHILOSOPHY </a>
+                        <a href="#">METHODOLOGY </a>
+                        <a href="#">ENTREPRENEURSHIP PROGRAM </a>
+                        <a href="#">
+                            ART, MEDIA & CULTURE -	SUPERWOMEN -	ART GALLERY
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav__item">Take Action</a> <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">VOLUNTEER</a>
+                        <a href="#">WORK WITH US</a>
+                        <a href="#">PROMOTE YOUR WORK</a>
+                        <a href="#">CONTACT US</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="nav-mobile">
+            <ion-icon class="nav-mobile__icon" name="menu-outline"></ion-icon>
+            <ion-icon class="nav-mobile__icon" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__items">
+                <div class="hero__item">
+                    <p class="heading-primary open-modal connect hero__text hero__text-1">
+                        Connect
+                    </p>
+                </div>
+                <div class="hero__item">
+                    <p class="heading-primary open-modal inspire hero__text hero__text-2">
+                        Inspire
+                    </p>
+                </div>
+                <div class="hero__item">
+                    <p class="heading-primary open-modal innovate hero__text hero__text-3">
+                        Innovate
+                    </p>
+                </div>
+                <div class="hero__item">
+                    <p class="heading-primary open-modal advocate hero__text hero__text-4">
+                        Advocate
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about" id="section-about">
+            <div class="u-center-text u-margin-bottom-l u-toAnimate" animation="fadeIn">
+                <h2 class="heading-secondary">About Us</h2>
+            </div>
+
+            <div class="row row--2-cols">
+                <div class="u-toAnimate" animation="fadeInLeftBig">
+                    <h3 class="heading-tertiary u-margin-bottom-sm">Background</h3>
+                    <p class="text">
+                        The Womenovation Foundation (WF) was launched in November 2022
+                        during COP27’s Gender Day in Sharm El Sheikh, Egypt. The
+                        Foundation’s concept was initiated as a creative approach to
+                        achieve sustainable development through advocating for innovation
+                        and gender equality. WF operates in the framework the United
+                        Nation’s global Sustainable Development Goals (SDGs) yet sets
+                        local priorities based on and analysis of local needs. Our
+                        projects focus on gender equality, leveraging technological
+                        solutions and mitigating climate change in the communities we work
+                        with. The Foundation began operations in Egypt with a view to pave
+                        the road for future expansion opportunities in Africa and the
+                        Middle East.
+                    </p>
+
+                    <a href="about.html" class="btn-text"> Learn more &rarr; </a>
+                </div>
+
+                <div class="toAnimate" animation="fadeInRightBig">
+                    <div class="fadingImage"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects" id="section-projects">
+            <div class="u-center-text u-margin-bottom-l u-toAnimate"
+                 animation="fadeIn">
+                <h2 class="heading-secondary">Projects</h2>
+            </div>
+
+            <div class="carousel slide"
+                 data-ride="carousel"
+                 id="carouselExampleIndicators">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                             src="img/gallery/women-1.jpg"
+                             alt="First slide" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="project__title u-margin-bottom-sm">Nada Akram</h3>
+                            <p class="project__text u-margin-bottom-md">
+                                Nada Akram is good
+                            </p>
+                            <a href="#" class="btn btn--white project__btn">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                             src="img/gallery/women-1.jpg"
+                             alt="First slide" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="project__title u-margin-bottom-sm">Nada Akram</h3>
+                            <p class="project__text u-margin-bottom-md">
+                                Nada Akram is good
+                            </p>
+                            <a href="#" class="btn btn--white project__btn">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                             src="img/gallery/women-1.jpg"
+                             alt="First slide" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="project__title u-margin-bottom-sm">Nada Akram</h3>
+                            <p class="project__text u-margin-bottom-md">
+                                Nada Akram is good
+                            </p>
+                            <a href="#" class="btn btn--white project__btn">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                             src="img/gallery/women-1.jpg"
+                             alt="First slide" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="project__title u-margin-bottom-sm">Nada Akram</h3>
+                            <p class="project__text u-margin-bottom-md">
+                                Nada Akram is good
+                            </p>
+                            <a href="#" class="btn btn--white project__btn">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev"
+                   href="#carouselExampleIndicators"
+                   role="button"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next"
+                   href="#carouselExampleIndicators"
+                   role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section-articles" id="section-articles">
+            <div class="u-center-text u-margin-bottom-l u-toAnimate" animation="fadeIn">
+                <h2 class="heading-secondary">Latest articles</h2>
+            </div>
+
+            <div class="card-row row row--2-cols u-toAnimate" animation="slideInLeft">
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-1">
+                        <div class="card__heading open-modal article1">
+                            <span class="card__heading-span card__heading-span--1">Huda</span>
+
+                            <span class="card__heading-span card__heading-span--1">Sha'arawi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-2">
+                        <div class="card__heading open-modal article2">
+                            <span class="card__heading-span card__heading-span--2">Safiya</span>
+
+                            <span class="card__heading-span card__heading-span--2">Zaghloul</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-3">
+                        <div class="card__heading open-modal article3">
+                            <span class="card__heading-span card__heading-span--3">Huda</span>
+
+                            <span class="card__heading-span card__heading-span--3">Sha'arawi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-4">
+                        <div class="card__heading open-modal article3">
+                            <span class="card__heading-span card__heading-span--4">Huda</span>
+
+                            <span class="card__heading-span card__heading-span--4">Sha'arawi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div
+              class="u-center-text u-margin-top-xl u-toAnimate"
+              animation="slideInUp"
+            >
+              <a href="#" class="btn btn--colored articles-btn">More articles</a>
+            </div>
+            -->
+        </section>
+
+        <section class="section-contact" id="section-contact">
+            <div class="row">
+                <div class="contact">
+                    <div class="contact__form">
+                        <div class="u-margin-bottom-md">
+                            <h2 class="heading-secondary">Contact us</h2>
+                        </div>
+
+                        <form class="form">
+                            <div class="form__group">
+                                <input type="text"
+                                       class="form__input"
+                                       id="name"
+                                       placeholder="Full name"
+                                       required />
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email"
+                                       class="form__input"
+                                       id="email"
+                                       placeholder="Email address"
+                                       required />
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <textarea name=""
+                                          id="message"
+                                          class="form__input form__input--textarea"
+                                          placeholder="Your message"></textarea>
+                                <label for="message" class="form__label">Your message</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button type="submit" class="btn btn--colored">
+                                    Next step &rarr;
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="overlay hidden">
+            <div class="modals">
+                <div class="modal modal-connect hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">Connect</h4>
+                            <p class="modal__text">
+                                We connect and partner with institutions and youth networks to
+                                identify talented and innovative mindsets to be hired as
+                                interns. Meanwhile, we partner with startups and entrepreneurs
+                                with high potential to grow, but incapable to implement or
+                                design efficient plans to grow. We then match talented
+                                individuals from our youth networks with entrepreneurs to
+                                develop integrated working teams under our supervision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-inspire hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">Inspire</h4>
+                            <p class="modal__text">
+                                We identify challenges derived from these working groups and
+                                provide them with relevant expertise needed to overcome these
+                                challenges. Experts have a role to inspire working groups and
+                                empower them in overcoming their challenges. Inspiration is
+                                delivered through sharing success stories, trainings,
+                                workshops, and generating ideas through creative thinking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-innovate hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">Innovate</h4>
+
+                            <p class="modal__text">
+                                Entrepreneurs and interns are on the right track and able to
+                                perform more efficiently. They have space for creativity, they
+                                developed new skills and ready to elevate their work to a
+                                mature stage that provides customers with a higher quality,
+                                they can widen their clients’ base and increase their revenue.
+                                They can innovate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-advocate hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">Advocate</h4>
+
+                            <p class="modal__text">
+                                We utilize our governmental, private sector and civil society
+                                partnerships in promoting innovation aiming to strengthen our
+                                national industrial capacities and maximizing opportunities to
+                                export and gain higher foreign investment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-article1 hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">
+                                Huda Sha'rawi
+                            </h4>
+
+                            <p class="modal__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae suscipit quaerat quidem doloribus officiis cumque
+                                voluptate nesciunt labore beatae illum aut nobis ab, velit,
+                                esse illo numquam quae ducimus voluptatibus minus! Eius
+                                quaerat quod architecto atque vitae obcaecati aliquam
+                                veritatis ab perspiciatis? Eligendi illum illo nulla dolore
+                                accusantium quasi quo ullam officia! Reprehenderit, optio
+                                voluptate culpa doloribus maxime beatae eos iure sint sit vel,
+                                asperiores quis hic at minus illo facere ut, itaque natus?
+                                Omnis neque tenetur sit ea saepe sunt molestias quaerat enim
+                                nisi recusandae voluptates quasi, assumenda repudiandae
+                                pariatur iste vel ratione itaque incidunt. Mollitia enim
+                                accusamus labore illum amet doloremque molestiae, totam
+                                possimus vero aspernatur recusandae quas, voluptatem dolor
+                                quasi a veniam iure odit voluptate itaque! Quas reprehenderit
+                                qui libero dolores delectus accusantium officia itaque quae
+                                optio rerum labore voluptatum sequi sed numquam, debitis
+                                dolorem architecto voluptatem soluta temporibus. Magnam
+                                aliquid, nihil architecto laborum enim harum unde?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-article2 hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">
+                                Safiya Zaghloul
+                            </h4>
+
+                            <p class="modal__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae suscipit quaerat quidem doloribus officiis cumque
+                                voluptate nesciunt labore beatae illum aut nobis ab, velit,
+                                esse illo numquam quae ducimus voluptatibus minus! Eius
+                                quaerat quod architecto atque vitae obcaecati aliquam
+                                veritatis ab perspiciatis? Eligendi illum illo nulla dolore
+                                accusantium quasi quo ullam officia! Reprehenderit, optio
+                                voluptate culpa doloribus maxime beatae eos iure sint sit vel,
+                                asperiores quis hic at minus illo facere ut, itaque natus?
+                                Omnis neque tenetur sit ea saepe sunt molestias quaerat enim
+                                nisi recusandae voluptates quasi, assumenda repudiandae
+                                pariatur iste vel ratione itaque incidunt. Mollitia enim
+                                accusamus labore illum amet doloremque molestiae, totam
+                                possimus vero aspernatur recusandae quas, voluptatem dolor
+                                quasi a veniam iure odit voluptate itaque! Quas reprehenderit
+                                qui libero dolores delectus accusantium officia itaque quae
+                                optio rerum labore voluptatum sequi sed numquam, debitis
+                                dolorem architecto voluptatem soluta temporibus. Magnam
+                                aliquid, nihil architecto laborum enim harum unde?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-article3 hidden">
+                    <a href="#" class="modal__close">&times;</a>
+                    <div class="modal_content">
+                        <div class="modal__right">
+                            <h4 class="heading-secondary u-margin-bottom-md">
+                                Ghada Wally
+                            </h4>
+
+                            <p class="modal__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae suscipit quaerat quidem doloribus officiis cumque
+                                voluptate nesciunt labore beatae illum aut nobis ab, velit,
+                                esse illo numquam quae ducimus voluptatibus minus! Eius
+                                quaerat quod architecto atque vitae obcaecati aliquam
+                                veritatis ab perspiciatis? Eligendi illum illo nulla dolore
+                                accusantium quasi quo ullam officia! Reprehenderit, optio
+                                voluptate culpa doloribus maxime beatae eos iure sint sit vel,
+                                asperiores quis hic at minus illo facere ut, itaque natus?
+                                Omnis neque tenetur sit ea saepe sunt molestias quaerat enim
+                                nisi recusandae voluptates quasi, assumenda repudiandae
+                                pariatur iste vel ratione itaque incidunt. Mollitia enim
+                                accusamus labore illum amet doloremque molestiae, totam
+                                possimus vero aspernatur recusandae quas, voluptatem dolor
+                                quasi a veniam iure odit voluptate itaque! Quas reprehenderit
+                                qui libero dolores delectus accusantium officia itaque quae
+                                optio rerum labore voluptatum sequi sed numquam, debitis
+                                dolorem architecto voluptatem soluta temporibus. Magnam
+                                aliquid, nihil architecto laborum enim harum unde?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clickable-overlay hidden"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo.png" alt="Full logo" class="footer__logo" />
+        </div>
+        <div class="row row--3-cols">
+            <div class="col-1-of-3">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#section-about" class="footer__link">About us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#section-contact" class="footer__link">Contact us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#section-projects" class="footer__link">Projects</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#section-articles" class="footer__link">Articles</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Art Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <p class="footer__copyrights">
+                    Copyrights &copy; <span class="year">2023</span> Womenovation
+                    Foundation. All rights reserved.
+                </p>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="">
+                    <ul class="footer__icons">
+                        <li class="footer__item">
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/39f166e9f2.js"
+            crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
