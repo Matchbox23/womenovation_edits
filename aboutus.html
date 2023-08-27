@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        })
+
+        $(function(){
+            $('#header').load('common_components/header.html')
+        })
+
+        $(function(){
+            $('#footer').load('common_components/footer.html')
+        })
+    </script>
+
+    <title>About Us</title>
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+    <header id="header" class="nav"></header>
+
+    <main>
+
+        <section class="section-about" id="section-about">
+            <div class="row row--sm"><h3 class="heading-secondary">About us</h3></div>
+
+            <div class="row row--sm" id="topLevelSlides">
+                <div id="topSlider" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                      <li data-target="#topSlider" data-slide-to="0" class="active"></li>
+                      <li data-target="#topSlider" data-slide-to="1"></li>
+                      <li data-target="#topSlider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img class="d-block w-100 c-img" src="assets/img/gallery/women-1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img class="d-block w-100 c-img" src="assets/img/gallery/women-2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img class="d-block w-100 c-img" src="assets/img/gallery/women-3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#topSlider" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#topSlider" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+            </div>
+
+            <div class="row row--sm">
+                <p class="text">
+                    The Womenovation Foundation was launched in November 2022 during
+                    COP27’s Gender Day in Sharm El Sheikh, Egypt. The Foundation’s
+                    concept emerged with an aim to accelerate sustainable development
+                    through growing the economy by providing more economic opportunities
+                    for women and effectively promoting the innovative outputs created.
+                    Our strategy believes in the power of advocacy and effective
+                    utilization of media, culture, arts, and innovation to promote an
+                    innovative culture believing in gender equality.
+                    <br /><br />
+                    Our targets are coherent to the United Nations’ global Sustainable
+                    Development Goals (SDGs). However, due to the broad nature of SDGs,
+                    we rely on evidence-based research that identify community
+                    challenges and an in-depth overview of local needs. Research results
+                    assist us in setting priorities and delivering projects with
+                    stronger impact. We are currently active through our projects are
+                    based in Egypt as an initial steppingstone towards future expansion
+                    in Africa and the Middle East.
+                </p>
+            </div>
+
+            <div class="row row--sm" id="vision">
+                <h3 class="heading-secondary u-margin-bottom-sm">MISSION & VISION</h3>
+                <div class="conteiner u-margin-bottom-sm">
+                    <h4 class="heading-tertiary heading--connect">MISSION</h4>
+                    <p class="text">
+                        Achieving progress in sustainable development through supporting more female innovative
+                        design entrepreneurs aiming for local industrial development with the power to fulfill
+                        local market demand, penetrate international markets and achieve economic growth.
+                    </p>
+                </div>
+
+                <div class="conteiner u-margin-bottom-sm">
+                    <h4 class="heading-tertiary heading--inspire">VISION</h4>
+                    <p class="text">
+                        An enriched art and design scene encouraging art education,
+                        creativity and innovation based on believing in the power of
+                        art and design in fostering sustainable development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row row--sm">
+                <h3 class="heading-secondary">MESSAGE FROM OUR CEO</h3>
+                <div class="row row--1-cols" style="margin-bottom:0px;">
+                    <div class="col-lg-01" style="margin-bottom:0px;">
+                        <img alt="MESSAGE FROM OUR CEO" src="assets/img/Msg CEO.png" style="width:100%; height:100%;">
+                    </div>
+                </div>
+                <p class="text">
+                    The power of Egyptian art has always been globally recognized due to its ancient history starting with pharaonic art, the core inspiration for the globally admired and timeless "art deco".
+                    Wherever we are, the first image that comes to anyone’s mind when we say Egypt is either the Pyramids, Abu Simbel, coptic churches or the minarets of Islamic Cairo… its all art.
+                    <br /><br />
+                    The slow down of economic growth as a result of the invasion of Ukraine following a global crisis of a pandemic constitutes a global challenge. Egypt is no exception from this global economic trend, which is reflected in a more challenging journey towards sustainable development goals (SDGs). Economic challenges have impacted every household,
+                    but it is essential to realize the opportunity of the current economic crisis.
+                    The dropped Egyptian Pound constitutes an opportunity for global competitiveness, industrial development, boosting exports and reducing unemployment.
+                    <br /><br />
+                    Furthermore, statistics from the International Monetary Fund (IMF) indicate that women who are not working could increase the economy by 34% if they join the national labor force.
+                    Just in time, the Womenovation Foundation emerges to create more opportunities for women, support the Egyptian design industry through sustainable production,
+                    investor relations, marketing strategies and knowledge sharing which would all contribute to Egypt’s ability to increase its share in global markets and reduce female unemployment.
+                    <br /><br />
+                    In my personal view, an existence of fascinating Egyptian designs in the global market is a necessity that will compliment the legendary artistic heritage we have which I consider Egypt’s soft power.
+                </p>
+            </div>
+
+            <!--<div class="row row--sm">
+        <h3 class="heading-secondary">What we do</h3>
+        <p class="text">
+            Sustainable development without effective advocacy and awareness is
+            inevitable. Most Development cooperation projects constantly lose
+            opportunities of impact optimization due to their limited focus on
+            citizen engagement, advocacy, and communication. Our existence is
+            driven by an aim to fill this gap through integrating fine and
+            applied arts in sustainable development. We design programs based on
+            bottom-up and top-down approaches depending on the development
+            objectives. The Foundation’s approach is based on partnerships and
+            community collaborations motivated to utilize artistic tools to
+            positively engage communities in sustainable development.
+        </p>
+    </div>-->
+            <!--<div class="row row--sm">
+        <h3 class="heading-secondary u-margin-bottom-sm">How we do it</h3>
+        <div class="conteiner u-margin-bottom-sm">
+            <h4 class="heading-tertiary heading--connect">Connect</h4>
+            <p class="text">
+                We connect and partner with institutions and youth networks to
+                identify talented and innovative mindsets to be hired as interns.
+                Meanwhile, we partner with startups and entrepreneurs with high
+                potential to grow, but incapable to implement or design efficient
+                plans to grow. We then match talented individuals from our youth
+                networks with entrepreneurs to develop integrated working teams
+                under our supervision.
+            </p>
+        </div>
+
+        <div class="conteiner u-margin-bottom-sm">
+            <h4 class="heading-tertiary heading--inspire">Inspire</h4>
+            <p class="text">
+                We identify challenges derived from these working groups and
+                provide them with relevant expertise needed to overcome these
+                challenges. Experts have a role to inspire working groups and
+                empower them in overcoming their challenges. Inspiration is
+                delivered through sharing success stories, trainings, workshops,
+                and generating ideas through creative thinking.
+            </p>
+        </div>
+        <div class="conteiner u-margin-bottom-sm">
+            <h4 class="heading-tertiary heading--innovate">Innovate</h4>
+            <p class="text">
+                Entrepreneurs and interns are on the right track and able to
+                perform more efficiently. They have space for creativity, they
+                developed new skills and ready to elevate their work to a mature
+                stage that provides customers with a higher quality, they can
+                widen their clients’ base and increase their revenue. They can
+                innovate.
+            </p>
+        </div>
+        <div class="conteiner">
+            <h4 class="heading-tertiary heading--advocate">Advocate</h4>
+            <p class="text">
+                We utilize our governmental, private sector and civil society
+                partnerships in promoting innovation aiming to strengthen our
+                national industrial capacities and maximizing opportunities to
+                export and gain higher foreign investment.
+            </p>
+        </div>
+    </div>-->
+            <!--<div class="row row--sm">
+        <h3 class="heading-secondary">Philosophy</h3>
+        <p class="text">
+            Combining “women” and “innovation” is a statement expressing our
+            belief in the role gender equality and innovation play in enriching
+            local culture, fostering economic growth, and promoting sustainable
+            development.
+        </p>
+
+        <div class="conteiner u-margin-bottom-sm">
+            <h4 class="heading-tertiary">Are men excluded?</h4>
+            <p class="text">
+                <strong>NO!</strong>, The word “woman” includes ‘man’, the word
+                “women” includes ‘men’ and “female” includes ‘male’. Using “women”
+                in our branding is a continuous reminder of the crucial need to
+                empower women in societies aiming for comprehensive gender
+                equality. We tend to support more women as they do get less
+                chances on the ground.
+            </p>
+        </div>
+
+        <div class="conteiner u-margin-bottom-sm">
+            <h4 class="heading-tertiary">What Innovation?</h4>
+            <p class="text">
+                We discover talents and guide our upcoming stars to optimize their
+                talent, we enrich their knowledge these talents to develop
+                innovative solutions that serve the sustainable development
+                agenda. Their work is evaluated by us and policy makers and
+                integrate their innovation in the national development process.
+            </p>
+        </div>
+
+        <div class="conteiner">
+            <h4 class="heading-tertiary">Added value</h4>
+            <p class="text">
+                Young talents gain a wealthy experience and broaden their horizon
+                through exposure to sustainable development and the dynamic
+                interactive business environment at emerging companies. Their
+                development or enhancement of soft skills and gaining new
+                information is our share of investing in the future. Integrating
+                art in our work enhances their ability to understand and visualize
+                existing or potential challenges is our method to encourage
+                out-of-the-box ideas and multi-dimensional thinking.
+                <br />
+                Our approach is an opportunity to obtain more inclusive and
+                representative insights that later formulate a more defined image
+                of their perception. Collecting insights and identifying
+                misconceptions evolve to understand public opinion leading to more
+                efficient decision making. Moreover, We value Ideas generated by
+                young innovators as they tend to have a more futuristic
+                character.. Existence of contributions with high potential could
+                expand into bigger projects with possibilities of macro-level
+                benefits and returns.
+            </p>
+            </div>
+
+
+            </div>-->
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+
+    <script src="https://kit.fontawesome.com/39f166e9f2.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
