@@ -23,7 +23,10 @@ checkFlexGap();
 // Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+if(yearEl != null){
+  yearEl.textContent = currentYear;
+}
+
 
 /*
 // Articles More Btn
@@ -95,7 +98,9 @@ const observer = new IntersectionObserver(
     rootMargin: "-100px",
   }
 );
-observer.observe(sectionHeroElement);
+if(sectionHeroElement != null){
+  observer.observe(sectionHeroElement);
+}
 
 // Modals
 let currentModal = "";
@@ -132,11 +137,12 @@ for (let i = 0; i < closeModal.length; i++) {
   });
 }
 
-document
-  .querySelector(".clickable-overlay")
-  .addEventListener("click", function () {
+const clickableOverlay = document.querySelector(".clickable-overlay");
+if(clickableOverlay != null){
+  clickableOverlay.addEventListener("click", function () {
     closeFunction();
   });
+}
 
 document.addEventListener("keydown", function (k) {
   if (currentModal != "" && k.key == "Escape") closeFunction();
@@ -146,12 +152,19 @@ document.addEventListener("keydown", function (k) {
 const menuBtn = document.querySelector(".nav-mobile");
 const header = document.querySelector(".nav");
 
-menuBtn.addEventListener("click", function () {
-  header.classList.toggle("nav-open");
+if(menuBtn != null){
+  console.log("menubtn exists");
+}
 
-  document.querySelector("html").classList.toggle("u-no-overflow");
-  document.querySelector("body").classList.toggle("u-no-overflow");
-});
+if(menuBtn != null){
+  menuBtn.addEventListener("click", function () {
+    header.classList.toggle("nav-open");
+  
+    document.querySelector("html").classList.toggle("u-no-overflow");
+    document.querySelector("body").classList.toggle("u-no-overflow");
+  });
+}
+
 
 // Smooth scrolling
 
@@ -170,21 +183,3 @@ allLinks.forEach(function (link) {
     }
   });
 });
-
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-      document.body.removeChild(loader);
-  });
-})
-
-$(function(){
-  $('#header').load('common_components/header.html')
-})
-
-$(function(){
-  $('#footer').load('common_components/footer.html')
-})
