@@ -1373,3 +1373,7 @@ body {
 #MuteButton.muted::before {
   content:  '🔇';
 }
+
+.ourstory {
+  width: 100%;
+}
