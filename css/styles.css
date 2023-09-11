@@ -173,7 +173,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.7;
+  line-height: 1.5;
   color: #777;
 }
 
@@ -1374,6 +1374,135 @@ body {
   content:  '🔇';
 }
 
-.ourstory {
+/* Our Story Styles */
+.ourstory{
   width: 100%;
+}
+
+.ourstory * {
+  color: #000;
+}
+
+.ourstory1{
+  padding-left: 25rem;
+  padding-right: 25rem;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 56.35em){
+  .ourstory1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.ourstory1 img{
+  object-fit:cover;
+  max-width: 100%;
+}
+
+/* OUR STORY TITLE */
+
+.ourstory1 .title{
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+}
+
+.ourstory1 .title h1{
+  font-weight:bold;
+  font-size: 8rem;
+  color: #000;
+  text-align: center;
+}
+
+.ourstory1 .title p{
+  text-align: center;
+  font-size: 4rem;
+  color: #000;
+}
+
+/* STATISTICS */
+.ourstory1 .statistics {
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.statistics .economicparticipation{
+  color: black;
+  font-weight: bold;
+}
+
+.statistics .NOTtext{
+  color: #9c1b26;
+  font-weight: bold;
+}
+
+.statistics .column {
+  float: left;
+  width: 50%;
+  font-size: 3rem;
+  padding: 5rem;
+}
+
+
+.statistics .column > * {
+  padding: 2rem;
+}
+
+.statistics .percent {
+  color: #545454;
+  font-weight:bolder;
+}
+
+.statistics::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 56.25em) {
+  .ourstory1 .statistics {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .ourstory1 .statistics .column {
+    width: 100%;
+  }
+
+  .statistics .statsLeft .column {
+    width: 100%;
+  }
+}
+
+/* Big paragraph 1 */
+.ourstory1 .onekyears {
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .ourstory1 .onekyears {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.ourstory1 .onekYears p{
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 1rem;
+} 
+
+.ourstory1 .onekYears h2{
+  font-size: 5rem;
+  color: #00a8a8;
+  text-align: center;
+  padding-top: 1rem;
 }
