@@ -1542,8 +1542,12 @@ body {
 /* OURSTORY2 */
 
 .ourstory2{
+  /*background-image: url("../img/background2.png");*/
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-left: 25rem;
   padding-right: 25rem;
+  padding-bottom: 25rem;
   background-color: #f5f3f5;
 }
 
@@ -1701,6 +1705,22 @@ body {
   background-image: linear-gradient(to right top, #b7cfbc, #aed1c2, #a5d3ca, #9ed4d4, #99d4de);
   line-height: 1.2;
   margin-bottom: 7em;
+}
+
+.timeline .timeboxC {
+  max-width: 25em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-image: linear-gradient(to right top, #b7cfbc, #aed1c2, #a5d3ca, #9ed4d4, #99d4de);
+  line-height: 1.2;
 }
 
 .timeline .time_containerA {
