@@ -1586,6 +1586,7 @@ body {
   font-size: 5rem;
   font-family: 'Bebas Neue';
   padding: 1em;
+  font-weight: normal;
   border-radius: 2em;
   color: #fff;
 }
