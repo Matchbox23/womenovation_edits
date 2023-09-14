@@ -153,10 +153,6 @@ const menuBtn = document.querySelector(".nav-mobile");
 const header = document.querySelector(".nav");
 
 if(menuBtn != null){
-  console.log("menubtn exists");
-}
-
-if(menuBtn != null){
   menuBtn.addEventListener("click", function () {
     header.classList.toggle("nav-open");
   
