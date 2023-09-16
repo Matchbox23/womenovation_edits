@@ -1357,7 +1357,7 @@ body {
   background: rgba(0,0,0,.5);
   border: none;
   color: #fff;
-  z-index: 650;
+  z-index: 65;
   font-size: 2rem;
   border-radius: 2rem;
   width: 4rem;
@@ -1542,9 +1542,19 @@ body {
 }
 
 .ourstory1 .tophalfcloser p{
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 56.25em){
+  .ourstory1 .tophalfcloser p{
     font-size: 3.5rem;
     text-align: center;
     padding-bottom: 5rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }
 
 .ourstory1 .tophalfcloser h2 {
@@ -1564,7 +1574,7 @@ body {
   background-size: cover;
   padding-left: 25rem;
   padding-right: 25rem;
-  padding-bottom: 25rem;
+  padding-bottom: 15rem;
   background-color: #f5f3f5;
 }
 
@@ -1572,6 +1582,7 @@ body {
   .ourstory2{
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -1595,6 +1606,31 @@ body {
   .ourstory2 .thingsbegun {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .ourstory2 .title h1 {
+    padding-top: 10rem;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .ourstory2 .thingsbegun h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    padding: 1em;
+    font-weight: normal;
+    border-radius: 2em;
+    color: #fff;
   }
 }
 
@@ -1682,6 +1718,8 @@ body {
   font-weight: bold;
   padding-top: 1em;
   text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .ourstory2 .coloredtitle{
@@ -1690,6 +1728,20 @@ body {
   padding-bottom: 1em;
   padding-top: 0.5em;
   text-align: center;
+  font-weight: normal;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 56.25em){
+  .ourstory2 .coloredtitle{
+    font-size: 9rem;
+    font-family: 'Bebas Neue';
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 2em;
+  }
 }
 
 /* TIMELINE */
@@ -1703,6 +1755,7 @@ body {
   padding-top: 0.5em;
   font-size: 7rem;
   font-family: 'Bebas Neue';
+  font-weight: normal;
 }
 
 .timeline .title img {
@@ -1719,20 +1772,41 @@ body {
 }
 
 .timeline .timebox {
-  max-width: 17em;
+  max-width: 22em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 6rem;
-  font-family: 'Bebas Neue';
-  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   background-image: linear-gradient(to right top, #b7cfbc, #aed1c2, #a5d3ca, #9ed4d4, #99d4de);
   line-height: 1.2;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
+}
+
+@media screen and (max-width: 56.25em){
+  .timeline .timebox {
+    max-width: 22em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-image: linear-gradient(to right top, #b7cfbc, #aed1c2, #a5d3ca, #9ed4d4, #99d4de);
+    line-height: 1.2;
+    margin-bottom: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .timeline .timeboxC {
@@ -1763,7 +1837,6 @@ body {
   padding: 3.7em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -2em;
   position: relative;
   background-color: #fff;
 }
@@ -1786,7 +1859,6 @@ body {
   padding: 3.2em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -2em;
   position: relative;
   background-color: #fff;
 }
@@ -1806,17 +1878,15 @@ body {
   text-align: center;
   height: 32rem;
   width: 32rem;
-  padding: 3em;
-  position: relative;
-  background-color: #fff;
-  padding-left: 2.2em;
-  padding-bottom: 0em;
+  padding: 2.8em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  background-color: #fff;
 }
 
 .timeline .time_containerC p{
-  font-size: 7.8rem;
+  font-size: 8rem;
   font-family: 'Bebas Neue';
   line-height: 0.9;
 }
@@ -1836,5 +1906,33 @@ body {
   padding-top: 1em;
   line-height: 1;
   color: #9C1B26;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'WC Mano Negra Bta', sans-serif;
+}
+
+.launchtext{
+  font-size: 6.5rem;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  line-height: 1;
+  color: #9C1B26;
+  font-family: 'WC Mano Negra Bta', sans-serif;
+  text-align: center;
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 56.25em){
+  .launchtext{
+    font-size: 6.5rem;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    line-height: 1;
+    color: #9C1B26;
+    font-family: 'WC Mano Negra Bta', sans-serif;
+    text-align: center;
+    max-width: 56.25em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
