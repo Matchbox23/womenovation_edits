@@ -1384,8 +1384,8 @@ body {
 }
 
 .ourstory1{
-  padding-left: 25rem;
-  padding-right: 25rem;
+  padding-left: 12%;
+  padding-right: 12%;
   background-color: #fff;
 }
 
@@ -1424,8 +1424,8 @@ body {
 /* STATISTICS */
 .ourstory1 .statistics {
   padding-top: 0rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .statistics .economicparticipation{
@@ -1441,8 +1441,8 @@ body {
 .statistics .column {
   float: left;
   width: 50%;
-  font-size: 3rem;
-  padding: 5rem;
+  font-size: 2.5rem;
+  padding: 3rem;
 }
 
 
@@ -1471,6 +1471,8 @@ body {
   
   .ourstory1 .statistics .column {
     width: 100%;
+    font-size: 2.5rem;
+    padding: 1.5rem;
   }
 
   .statistics .statsLeft .column {
@@ -1498,14 +1500,29 @@ body {
   font-size: 3.5rem;
   text-align: center;
   padding-top: 1rem;
+  padding-bottom: 4rem;
+  margin-left: 5em;
+  margin-right: 5em;
 } 
 
+@media screen and (max-width: 56.25em) {
+  .ourstory1 .onekYears p{
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    margin-left: 1em;
+    margin-right: 1em;
+  } 
+}
+
 .ourstory1 .onekYears h2{
-  font-size: 7rem;
+  font-size: 6.5rem;
   color: #00a8a8;
   text-align: center;
   padding-top: 1rem;
   font-family: 'Bebas Neue';
+  font-weight: normal;
 }
 
 .ourstory1 .women_images {
@@ -1527,7 +1544,7 @@ body {
 .ourstory1 .tophalfcloser p{
     font-size: 3.5rem;
     text-align: center;
-    font-weight: bold;
+    padding-bottom: 5rem;
 }
 
 .ourstory1 .tophalfcloser h2 {
@@ -1563,12 +1580,15 @@ body {
   font-size: 3.5rem;
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .ourstory2 .thingsbegun {
   max-width: 45em;
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 56.35em){
@@ -1581,8 +1601,8 @@ body {
 .ourstory2 .thingsbegun h2{
   justify-content: center;
   text-align: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   font-size: 5rem;
   font-family: 'Bebas Neue';
   padding: 1em;
@@ -1608,16 +1628,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 7em;
-  margin-right: 7em;
   font-family: 'Bebas Neue';
   text-align: center;
 }
 
 .ourstory2 .families .column {
-  flex-basis: 47.5%;
+  flex-basis: 1;
   font-size: 4.5rem;
-  flex-shrink: 0;
 }
 
 .ourstory2 img {
@@ -1627,7 +1644,6 @@ body {
 .ourstory2 .families .subcolumn {
   flex-basis: 5%;
   font-size: 4.5rem;
-  flex-shrink: 0;
 }
 
 @media screen and (max-width: 56.35em){
@@ -1638,36 +1654,41 @@ body {
 
 @media screen and (max-width: 32em){
   .ourstory2 .families .column {
-    flex-basis: 33%;
+    flex-basis: 1;
     font-size: 4.5rem;
-    flex-shrink: 0;
+    margin-left: 1em;
+    margin-right: 1em;
   }
+
   .ourstory2 .families .subcolumn {
     flex-basis: 33%;
     font-size: 4.5rem;
-    flex-shrink: 0;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
 .ourstory2 .founding h2{
     font-size: 5rem;
+    font-weight: normal;
     color: #00a8a8;
     text-align: center;
-    padding-top: 5rem;
-    font-weight: bold;
+    padding-bottom: 4rem;
+    font-family: 'Bebas Neue';
 }
 
 .ourstory2 .founding p{
   font-size: 3rem;
   font-weight: bold;
   padding-top: 1em;
+  text-align: center;
 }
 
 .ourstory2 .coloredtitle{
   font-size: 10rem;
   font-family: 'Bebas Neue';
   padding-bottom: 1em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   text-align: center;
 }
 
