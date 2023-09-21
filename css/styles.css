@@ -257,7 +257,7 @@ body {
     display: flex;
     font-family: "Montserrat";
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     background-color: #fff;
     padding: 0 4.8rem;
 }
@@ -274,7 +274,9 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 1rem; }
+    gap: 1rem;
+    margin-bottom: 1.5em;
+  }
   .nav__item:link, .nav__item:visited {
     display: inline-block;
     color: #333;
@@ -668,6 +670,7 @@ body {
   cursor: pointer;
   font-size: 2.5rem;
   background-color: #ffffff;
+  font-weight: bold;
 }
 
 .btn::after {
@@ -690,10 +693,10 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; } */
 
-.btn:focus, .btn:active {
+/* .btn:focus, .btn:active {
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } */
 
 .btn--white {
   background-color: #fff;
