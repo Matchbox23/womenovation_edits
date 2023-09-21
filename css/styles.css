@@ -255,18 +255,18 @@ body {
 
 .nav {
     display: flex;
-    font-family: "BEBAS NEUE";
+    font-family: "Montserrat";
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    height: 14rem;
     padding: 0 4.8rem;
 }
   .nav__logo-box {
     transition: all 0.3s; }
   .nav__logo {
-    height: 8.8rem;
-    width: 8.8rem;
+    height: 20rem;
+    width: 20rem;
+    padding: 3rem;
     transition: all 0.3s; }
     .nav__logo:hover {
       transform: scale(1.05); }
@@ -274,7 +274,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 4.8rem; }
+    gap: 1rem; }
   .nav__item:link, .nav__item:visited {
     display: inline-block;
     color: #333;
@@ -362,6 +362,7 @@ body {
     display: none; }
   .nav__main {
     background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Montserrat';
     position: absolute;
     top: 0;
     left: 0;
@@ -594,14 +595,15 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   font-size: 1.4rem; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 10rem 0.5em; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 8rem; }
+    margin-bottom: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 5rem; } }
@@ -624,15 +626,22 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
+    padding: 0.2rem;  
     transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #6a9bb2;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
+    /* transform: rotate(5deg) scale(1.3);*/
+  }
   .footer__copyrights {
+    text-align: center;
     color: #f7f7f7;
     border-top: 1px solid #777;
-    padding: 2rem; }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem; }
   .footer__icons {
     color: #f7f7f7;
     border-top: 1px solid #777;
@@ -673,13 +682,13 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn:hover {
+/* .btn:hover {
   border: none;
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+    opacity: 0; } */
 
 .btn:focus, .btn:active {
   outline: none;
@@ -1417,7 +1426,7 @@ body {
 
 .ourstory1 .title p{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #000;
 }
 
@@ -1444,6 +1453,20 @@ body {
   font-size: 2.5rem;
   padding: 2.5rem;
   text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.statistics .column p{
+  font-size: 1.75rem;
+  padding: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.statistics .column img {
+  height: 20rem;
+  padding: 0;
 }
 
 
@@ -1498,7 +1521,7 @@ body {
 }
 
 .ourstory1 .onekYears p{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 4rem;
@@ -1518,7 +1541,7 @@ body {
 }
 
 .ourstory1 .onekYears h2{
-  font-size: 6.5rem;
+  font-size: 4rem;
   color: #00a8a8;
   text-align: center;
   padding-top: 1rem;
@@ -1540,10 +1563,23 @@ body {
   flex-basis: 30%;
   flex-shrink: 0;
   min-width: 25em;
+  position: relative;
+  text-align: center;
+}
+
+.ourstory1 .women_images p {
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .ourstory1 .tophalfcloser p{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-bottom: 5rem;
 }
@@ -1559,7 +1595,7 @@ body {
 }
 
 .ourstory1 .tophalfcloser h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #00a8a8;
   text-align: center;
   padding-top: 7rem;
@@ -1589,7 +1625,7 @@ body {
 
 .ourstory2 .title h1 {
   padding-top: 10rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -1640,7 +1676,7 @@ body {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Bebas Neue';
   padding: 1em;
   font-weight: normal;
@@ -1730,7 +1766,6 @@ body {
   padding-top: 0.5em;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 3em;
 }
 
 @media screen and (max-width: 56.25em){
@@ -1777,7 +1812,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Montserrat';
   font-weight: normal;
   padding-top: 1em;
@@ -1833,9 +1868,9 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
-  height: 32rem;
-  width: 32rem;
-  padding: 3.7em;
+  height: 20rem;
+  width: 20rem;
+  padding: 2em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1843,7 +1878,7 @@ body {
 }
 
 .timeline .time_containerA p{
-  font-size: 9rem;
+  font-size: 5rem;
   font-family: 'Bebas Neue';
   line-height: 1;
 }
@@ -1855,9 +1890,9 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
-  height: 32rem;
-  width: 32rem;
-  padding: 3.2em;
+  height: 20rem;
+  width: 20rem;
+  padding: 2em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1865,7 +1900,7 @@ body {
 }
 
 .timeline .time_containerB p{
-  font-size: 9rem;
+  font-size: 5rem;
   font-family: 'Bebas Neue';
   line-height: 1;
 }
@@ -1877,9 +1912,9 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
-  height: 32rem;
-  width: 32rem;
-  padding: 2.8em;
+  height: 20rem;
+  width: 20rem;
+  padding: 1.4em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1887,7 +1922,7 @@ body {
 }
 
 .timeline .time_containerC p{
-  font-size: 8rem;
+  font-size: 5rem;
   font-family: 'Bebas Neue';
   line-height: 0.9;
 }
@@ -1911,7 +1946,7 @@ body {
 }
 
 .launchtext{
-  font-size: 6.5rem;
+  font-size: 4rem;
   padding-bottom: 1em;
   padding-top: 1em;
   line-height: 1;
