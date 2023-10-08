@@ -78,7 +78,6 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #f7f7f7;
  }
 
 @keyframes moveInLeft {
@@ -198,22 +197,19 @@ body {
 
 .heading-secondary {
   font-family: "Bebas Neue";
-  font-size: 3.6rem;
+  font-size: 8rem;
   text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #88afc1, #557c8e);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: all 0.2s; }
+  color: black;
+  text-align: center;
+}
 
 .heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
 
 .text {
   font-size: 1.6rem; }
@@ -260,6 +256,7 @@ body {
     align-items: end;
     background-color: #fff;
     padding: 0 4.8rem;
+    border-bottom: solid black 1px;
 }
   .nav__logo-box {
     transition: all 0.3s; }
@@ -420,9 +417,107 @@ body {
     flex-wrap: wrap;
 }
 
-    .team .team_member {
-/*        background: #fff;
-*/        margin: 5px;
+.upperBoard {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #000;
+  font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 56.25em) {
+  .upperBoard .board_member .title h1{
+    font-size: 5rem;
+  }
+}
+
+.upperBoard .board_member{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.upperBoard .board_member img{
+  min-width: 0;
+}
+
+
+.upperBoard .board_member .title{
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.upperBoard .board_member:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+} 
+
+.board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  
+  font-weight: normal;
+}
+
+.board .lower_board_member {
+  flex-basis: 33%;
+  min-width: 0;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .board .lower_board_member {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+  .board .lower_board_member figcaption {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+
+.board .lower_board_member img{
+  width: 100%;
+  height: auto;
+}
+
+.board .lower_board_member:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+} 
+
+.board .lower_board_member figcaption {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* OLD TEAM MEMBER */
+
+  .team .team_member {
+        margin: 5px;
         margin-top: 160px;
         margin-bottom:20px;
         width: 270px;
@@ -464,7 +559,9 @@ body {
                     background-color: #6a9bb2;
                     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
                     transform: translateY(-2px);
-                }
+                } 
+
+/* USELESS HERO SECTION */
 
 .hero {
     height: 95vh;
@@ -1177,15 +1274,22 @@ body {
     transform: translate(-50%, -50%) scale(1); } }
 
 .section-about{
-  margin: 5rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 
   @media only screen and (max-width: 72.5em) {
     .section-about {
-      padding: 5rem 5rem 5rem 5rem; } }
+      padding: 5rem 5rem 5rem 5rem;
+      margin: 0rem;
+    } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 5rem 5rem 5rem 5rem; } }
+      padding: 5rem 5rem 5rem 5rem;
+      margin: 0rem;
+     } }
   @media only screen and (max-width: 56.25em) {
     .section-about .row {
       row-gap: 6rem;
