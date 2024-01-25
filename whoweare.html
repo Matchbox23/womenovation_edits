@@ -1,661 +1,1171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Womenovation Foundation">
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Who We Are - Womenovation</title>
 
-    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
-    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
 
-    <title>About Us</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/progressbar.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 
-<body class="sticky">
-    <div class="loader"></div>
-    <header id="header" class="nav">
-        <a href="index.html" class="navigation__logo-box">
-            <img src="img/logo.png"
-                    alt="Womenovation Foundation Logo"
-                    class="nav__logo" />
-        </a>
-        
-        <nav class="nav__main">
-            <ul class="nav__list">
-                <li class="navigation">
-                    <a href="index.html"><button type="button" class="btn nav_item">Home</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="aboutus.html"><button type="button" class="btn nav_item">About Womenovation</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="whoweare.html"><button type="button" class="btn nav_item">Meet the Team</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="#"><button type="button" class="btn nav_item">Get Involved</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="contactus.html"><button type="button" class="btn nav_item">Contact Us</button></a>
-                </li>
-            </ul>
-        </nav>
 
-        <button class="nav-mobile">
-            <ion-icon class="nav-mobile__icon" name="menu-outline"></ion-icon>
-            <ion-icon class="nav-mobile__icon" name="close-outline"></ion-icon>
-        </button>
+<body>
+
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+
+    <!-- Team Cursor -->
+    <div class="cursor" id="team_cursor">Drag</div>
+
+
+    <!-- Preloader -->
+    <!--<div class="preloader">
+        <div class="loading">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+        </div>
+    </div>-->
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+
+
+    <!-- Go Top Button -->
+    <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <!-- Header area start -->
+    <header class="header__area-3">
+        <div class="header__inner-3">
+            <div class="header__logo-2">
+                <a href="index.html" class="logo-dark"><img src="assets/imgs/logo/logo-black.png" alt="Site Logo"></a>
+                <a href="index.html" class="logo-light"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Site Logo"></a>
+            </div>
+            <div class="header__nav-2">
+                <ul class="main-menu-3 menu-anim">
+                    <li><a href="index.html">home</a></li>
+                    <li>
+                        <a href="whoweare.html">Who We Are</a>
+                        <ul class="main-dropdown">
+                            <li><a href="#overview">OVERVIEW</a></li>
+                            <li><a href="#story">OUR STORY</a></li>
+                            <li><a href="#mv">MISSION & VISION</a></li>
+                            <li><a href="#ceo">FOUNDER & CEO</a></li>
+                            <li><a href="#board">BOARD OF TRUSTEES</a></li>
+                            <li><a href="#partners">PARTNERS</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="whatwedo.html">What We Do</a>
+                        <ul class="main-dropdown">
+                            <li><a href="whatwedo.html#approach">APPROACH</a></li>
+                            <li><a href="whatwedo.html#projects">PROJECTS</a></li>
+                            <li><a href="whatwedo.html#events">EVENTS</a></li>
+                            <li><a href="whatwedo.html#innovation">INNOVATION</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GET INVOLVED</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="header__nav-icon-3">
+
+
+                <button id="open_offcanvas"><img src="assets/imgs/icon/menu-black.png" alt="Menubar Icon"></button>
+            </div>
+        </div>
     </header>
-
-    <main>
-        <section class="section-about" id="section-about">
-            <div class="row row--sm" id="board">
-                <h3 class="heading-secondary u-margin-bottom-sm">BOARD OF TRUSTEES & FRIENDS </h3>
-            </div>
-
-            <div class="upperBoard">
-                <div class="board_member open-modal lobna">
-                    <div class="image">
-                        <img src="img\newBoard\lobna.png" alt="Lobna Helal">
-                    </div>
-                    <div class="title">
-                        <h1 align="left">LOBNA HELAL<br><span style="font-weight: bold">DEPUTY CHAIRWOMAN</span></h1>
-                    </div>
+    <!--<div class="header__search">
+        <form action="#">
+            <input type="text" name="s" id="s" placeholder="Search..">
+        </form>
+    </div>-->
+    <!-- Header area end -->
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+        <div class="offcanvas__body">
+            <div class="offcanvas__left">
+                <div class="offcanvas__logo">
+                    <a href="index.html"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Offcanvas Logo"></a>
                 </div>
-                <div class="board_member open-modal amal">
-                    <div class="image">
-                        <img src="img\newBoard\amal.png" alt="Amal Mowafy">
-                    </div>
-                    <div class="title">
-                        <h1 align="left">AMAL MOWAFY<br><span style="font-weight: bold">DEPUTY CHAIRWOMAN</span></h1>
-                    </div>
+                <div class="offcanvas__social">
+                    <h3 class="social-title">Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
                 </div>
-                <div class="board_member open-modal salma">
-                    <div class="title">
-                        <h1 align="right">SALMA EL-FAWAL<br><span style="font-weight: bold">SECRETARY GENERAL</span></h1>
-                    </div>
-                    <div class="image">
-                        <img src="img\newBoard\salma.png" alt="Salma El-Fawal">
-                    </div>
-                </div>
-                <div class="board_member open-modal hanan">
-                    <div class="image">
-                        <img src="img\newBoard\hanan.png" alt="Hanan Girgis">
-                    </div>
-                    <div class="title">
-                        <h1 align="left">HANAN GIRGIS<br><span style="font-weight: bold">TREASURER</span></h1>
-                    </div>
+                <div class="offcanvas__links">
+                    <ul>
+                        <li><a href="whoweare.html">About</a></li>
+                        <li><a href="contact">contact</a></li>
                 </div>
             </div>
+            <div class="offcanvas__mid">
+                <div class="offcanvas__menu-wrapper">
+                    <nav class="offcanvas__menu">
+                        <ul class="menu-anim">
+                            <li><a href="index.html">home</a> </li>
+                            <li><a href="whoweare.html">Who We Are</a></li>
+                            <li><a href="whatwedo.html">What We Do</a></li>
+                            <li><a href="#">GET INVOLVED</a></li>
 
-            <div class="board">
-                <div class="lower_board_member open-modal azza">
-                    <img src="img\newBoard\azza.png" alt="Azza Fahmy">
-                    <figcaption>AZZA FAHMY</figcaption>
-                </div>
-                <div class="lower_board_member open-modal ghada">
-                    <img src="img\newBoard\ghada.png" alt="Ghada Barsoum">
-                    <figcaption>GHADA BARSOUM</figcaption>
-                </div>
-                <div class="lower_board_member open-modal magued">
-                    <img src="img\newBoard\magued.png" alt="Magued Osman">
-                    <figcaption>Magued Osman</figcaption>
-                </div>
-                <div class="lower_board_member open-modal mervat">
-                    <img src="img\newBoard\mervat.png" alt="Mervat Abou Ouf">
-                    <figcaption>Mervat Abou Ouf</figcaption>
-                </div>
-                <div class="lower_board_member open-modal medhat">
-                    <img src="img\newBoard\medhat.png" alt="Medhat Medany">
-                    <figcaption>Medhat Medany</figcaption>
-                </div>
-                <div class="lower_board_member open-modal nardine">
-                    <img src="img\newBoard\nardine.png" alt="Nardine Farag">
-                    <figcaption>Nardine Farag</figcaption>
-                </div>
-                <div class="lower_board_member open-modal nesreen">
-                    <img src="img\newBoard\nesreen.png" alt="Nesreen El-Molla">
-                    <figcaption>Nesreen El-Molla</figcaption>
-                </div>
-                <div class="lower_board_member open-modal samiha">
-                    <img src="img\newBoard\samiha.png" alt="Samiha Fawzy">
-                    <figcaption>Samiha Fawzy</figcaption>
-                </div>
-                <div class="lower_board_member open-modal shereen">
-                    <img src="img\newBoard\shereen.png" alt="Shereen Reda">
-                    <figcaption>Shereen Reda</figcaption>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            
-            <!-- <div class="team">
-                <div class="team_member open-modal lobna">
-                    <div class="team_img">
-                        <img src="img\Board\Lobna helal.png" alt="Lobna helal">
-                    </div>
-                    <h3></h3>
+            <div class="offcanvas__right">
+                <div class="offcanvas__search">
+                    <form action="#">
+                        <input type="text" name="search" placeholder="Search keyword">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
-                <div class="team_member open-modal salma">
-                    <div class="team_img">
-                        <img src="img\Board\Salma elfawal.png" alt="Salma elfawal">
-                    </div>
-                    <h3></h3>
+                <div class="offcanvas__contact">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li><a href="tel:(+2) 01550005555">(+2) 01550005555</a></li>
+                        <li><a href="mailto:info@womenovation.com">info@womenovation.org</a></li>
+                        <li>9 Hussein Ahmed Rashad St., Dokki - Giza, Egypt.</li>
+                    </ul>
                 </div>
-                <div class="team_member open-modal amal">
-                    <div class="team_img">
-                        <img src="img\Board\Amal mowafy.png" alt="Amal mowafy">
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="team_member open-modal hanan">
-                    <div class="team_img">
-                        <img src="img\Board\Hanan Girgis.png" alt="Hanan Girgis">
-                    </div>
-                    <h3></h3>
-                </div>
-            </div> -->
-
-            <!-- <div class="team">
-                <div class="team_member open-modal shereen">
-                    <div class="team_img">
-                        <img src="img\Board\Shereen reda.png" alt="Shereen reda">
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="team_member open-modal samiha">
-                    <div class="team_img">
-                        <img src="img\Board\Samiha fawzy.png" alt="Samiha fawzy">
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="team_member open-modal magued">
-                    <div class="team_img">
-                        <img src="img\Board\Magued osman.png" alt="Magued osman">
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="team_member open-modal nardine">
-                    <div class="team_img">
-                        <img src="img\Board\Nardine farag.png" alt="Nardine farag">
-                    </div>
-                    <h3></h3>
-                </div>
+                <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+                <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
             </div>
-
-            <br /><br />
-
-            <div class="team">
-                <div class="team_member  open-modal nesrine">
-                    <div class="team_img">
-                        <img src="img\Board\Nesrine el-molla.png" alt="Nesrine el-molla">
-                    </div>
-                    <h3></h3>
-                </div>
-
-                <div class="team_member open-modal ghada">
-                    <div class="team_img">
-                        <img src="img\Board\Ghada barsoum.png" alt="Ghada barsoum">
-                    </div>
-                    <h3></h3>
-                </div>
-
-                <div class="team_member open-modal mervat">
-                    <div class="team_img">
-                        <img src="img\Board\Mervat abou oaf.png" alt="Mervat abou oaf">
-                    </div>
-                    <h3></h3>
-                </div>
-
-                <div class="team_member  open-modal samira">
-                    <div class="team_img">
-                        <img src="img\Board\Samira rashwan.png" alt="Samira rashwan">
-                    </div>
-                    <h3></h3>
-                </div>
-            </div> -->
-
-            <div class="row row--sm">
-                <br /><br />
-                <h5 class="heading-tertiary">REGIONAL AMBASSADORS FROM THE ARAB REGION WHO PROVIDE US WITH CONTINUOUS SUPPORT</h5>
-                <div class="row row--2-cols">
-                    <div class="col-lg-02">
-                        <img alt="MESSAGE FROM OUR CEO" src="img/JOE BOU EID.png" style="width:100%; height:100%;">
-                    </div>
-                    <div class="col-lg-02">
-                        <img alt="MESSAGE FROM OUR CEO" src="img/Lena chamamyan.png" style="width:100%; height:100%;">
-                    </div>
-                </div>
+            <div class="offcanvas__close">
+                <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
             </div>
+        </div>
+    </div>
+    <!-- Offcanvas area end -->
 
-            <div class="row row--sm" id="team">
-                <h3 class="heading-tertiary u-margin-bottom-sm">MANAGEMENT & TEAM</h3>
-                <div class="team">
-                    <div class="team_member open-modal MARIAM">
-                        <div class="team_img">
-                            <img src="img\Team\MARIAM WALEED.png" alt="Amal mowafy">
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!-- single img 8 -->
+                <div class="single__image-8 pt-130 text-center sp-x">
+                    <div class="col-lg-10 text-center m-auto">
+                        <div class="singlecontent">
+                            <div class="hover_8_wrap">
+                                <h2 class="tech_title fade_bottom_4">
+                                    WHO WE ARE
+                                </h2>
+                            </div>
+
+                            <div class="single__thumb">
+                                <img src="assets/imgs/home-7/siwa-girls.jpg" alt="image">
+                                <img src="assets/imgs/essential-img/video-frame.png" alt="image" class="video-frame">
+                                <img class="svgstar" src="assets/imgs/essential-img/svgstar.png" alt="shape">
+                                <img src="assets/imgs/shape/24.png" alt="shape" class="shape-2">
+                            </div>
                         </div>
-                        <h3></h3>
                     </div>
-                    <div class="team_member open-modal WALID">
-                        <div class="team_img">
-                            <img src="img\Team\WALID OSMAN.png" alt="Lobna helal">
-                        </div>
-                        <h3></h3>
-                    </div>
-                    <div class="team_member open-modal HALA">
-                        <div class="team_img">
-                            <img src="img\Team\HALA AGROUDY.png" alt="Hanan Girgis">
-                        </div>
-                        <h3></h3>
-                    </div>
-                    <!--<div class="team_member open-modal salma">
-                        <div class="team_img">
-                            <img src="img\Board\Salma elfawal.png" alt="Salma elfawal">
-                        </div>
-                        <h3></h3>
-                    </div>-->
                 </div>
-            </div>
+                <!-- /single img 8 -->
+                <!-- Story area start -->
+                <section id="overview" name="overview" class="story__area pb-110">
+                    <div class="container g-0 line pt-140">
+                        <span class="line-3"></span>
+                        <div class="sec-title-wrapper">
+                            <div class="row">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                                    <h3 class="sec-title title-anim">OVERVIEW</h3>
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                                    <div class="story__text">
+                                        <p>
+                                            The Womenovation Foundation is a non-profit organization utilizing local innovative talents in elevating the status of women.
+                                            The organization’s primary aim is to invest in supporting design-based industries in generating economic opportunities for women.
+                                            Our second organizational aim is to strengthen the culture of gender equality across society.
+                                        </p>
+                                        <p>
+                                            Given the low participation of women in the economy,
+                                            effectively supporting design-based industries and providing women with entrepreneurship opportunities and decent jobs
+                                            translate to economic growth and an accelerated progress in the achieving sustainable development goals (SDGs).
+                                            Raising awareness on the importance of women’s equal rights and their ability to equally perform and deliver is a
+                                            crucial factor to ensure all citizens become proactive in reducing gender disparities.
+                                        </p>
+                                    </div>
+                                </div>
 
-            <!--<div class="row row--sm">
-                <h3 class="heading-secondary u-margin-bottom-sm">PARTNERS </h3>
-                <div class="col-lg-12">
-                    <div class="item box col-lg-2"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
-                    <div class="item box col-lg-2"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
-                    <div class="item box col-lg-2"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
-                    <div class="item box col-lg-2"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
-                    <div class="item box col-lg-2"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
-                </div>
-            </div>-->
-
-            <div class="overlay hidden">
-                <div class="modals">
-                    <div class="modal modal-lobna hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Lobna helal
-                                </h4>
-                                <h6 class="heading-tertiary u-margin-bottom-md">
-                                    chairwoman, Womenovation Foundation
-                                </h6>
-                                <p class="modal__text">
-                                    Lobna Helal is the current Chairwoman of City Edge Developments and a non-executive Board member at Telecom Egypt.
-                                    She is the first woman ever to be appointed as Deputy Governor of the Central Bank of Egypt. Helal held several key
-                                    positions at the National Investment Bank, Nasser Social Bank, and the Social Housing Fund. She was awarded the AFI
-                                    Advocacy Champion Gender Award and appointed as Gender Ambassador. In 2016, Helal was selected among the Top 50 Most
-                                    Influential Women in the Egyptian Economy.  She was also ranked second most powerful woman in Forbes Magazine’s 100 Most
-                                    Powerful Women in the Middle East and North Africa in 2016 and 2017, Helal holds a Master of Arts in Economics from the
-                                    American University in Cairo. Her exceptional knowledge and expertise are  an asset to Womenovation that will inspire our
-                                    team and significantly contribute to improving the lives of our beneficiaries.
-                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <div class="story__img-wrapper">
+                                    <img src="assets/imgs/1.png" alt="Story Thumbnail" class="w-100">
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                                <div class="story__img-wrapper img-anim">
+                                    <img src="assets/imgs/20.png" alt="Story Thumbnail" data-speed="auto">
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                <div class="story__img-wrapper">
+                                    <img src="assets/imgs/9.png" alt="Story Thumbnail">
+                                    <img src="assets/imgs/17.png" alt="Story Thumbnail">
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+                <!-- Story area end -->
 
-                    <div class="modal modal-salma hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Salma elfawal
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    SECRETARY GENERAL, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Salma Elfawal has over 18 years of experience in human rights and social development in Egypt..
-                                    She took the lead in project design, resource mobilization, strategic planning, and programme management.
-                                    Salma is currently employed at UNICEF taking responsibility of the child protection portfolio both on the policy and programme levels.
-                                    In her previous role as Development Cooperation Programme Manager at the Embassy of the Netherlands in Cairo, she managed diverse portfolios including women empowerment,
-                                    gender equality, gender-based violence, sexual and reproductive health and rights, child protection, migration, access to justice, entrepreneurship, and financial inclusion..
-                                    Moreover, she wrote and published several studies on relevant international development best practices and the possibility of their adaptation in the Egyptian context.
-                                    Salma holds a Master’s degree in Globalization and Development from the School of Oriental and African Studies at the University of London.
-                                </p>
+                <div class="about__area-8 sp-x">
+
+                    <div class="row justify-content-between">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                            <div class="about8">
+                                <h2 class="about8__title fade_bottom_2" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                                    THE  <br> MOTIVE
+                                </h2>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="modal modal-amal hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Amal mowafy
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    Deputy chairwoman, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Amal Mowafy is the Chief of Party of USAID Egyptian Pioneers as well as an Adjunct Faculty Member at the Economics Department at the American University in Cairo.
-                                    She is also a board member of Egypt Network for Integrated Development and a Trustee of Alkorra Foundation for Sustainable Development.
-                                    With over ten years experience at ILO, her last assignment in Abidjan, she held the position of Regional Technical Specialist for Youth Employment in Africa. Prior to ILO,
-                                    she worked three yearas with USAID and seven years at the Ministry of International Cooperation. Mowafy has two degrees with highest honors from the American University in Cairo:
-                                    a Master in Public Administration and a Bachelor. in Economics. Mowafy received the ILO Centennial Recognition Award and selected as one of the Top 50 Most Influential
-                                    Women in the Egyptian Economy in 2016 and two USAID on the Spot Cash Awards for developing US-Egyptian university partnerships.
+                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                            <div class="about8__content fade_bottom_2" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                                <p>
+                                    We felt the responsibility to contribute to developing a stable economy and a heritage that constructs a better future for upcoming generations.
+                                    By realizing the opportunity in efficiently utilizing all these women,
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-hanan hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Hanan Girgis
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    Treasurer, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Hanan Girgis is the executive Vice President of the Egyptian Center for Research (Baseera). Apart from her managerial role,
-                                    Girgis is one of the Baseera’s founders and is the mind orchestrating the Center’s success over more than a decade.
-                                    She is internationally recognized as an expert in the field of public opinion and quantitative research.
-                                    Her educational background includes a Bachelor’s degree, a Master and a Ph.D in Statistics from the faculty of Economics and Political science at Cairo University.
-                                    Her ability to integrate her academic and practical experience in  social and demographic research are evident in her valuable contributions in the National Strategy for Population and Development (2015-2020),
-                                    the National Strategy for Women Empowerment (2030) and the National Strategy for Childhood and Motherhood (2015-2020).,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="modal modal-shereen hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Shereen reda
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Shereen Reda is a leading Egyptian actress with popularity across the Arab region.
-                                    She started her career in the advertising industry as a model with her first modelling experience at the age of 11.
-                                    Her passion for fashion started at a very young age which made her study fashion in Los Angeles, In 1989, Following her return to Egypt,
-                                    she starred “Fawazeer El Fonoon”  a 30-episode riddle-based annual TV program aired during the month of Ramadan and known for highest viewership in the Arab region.
-                                    The mid-nineties she started her first experience in the Film industry where she starred two films ”Nazwa” and “Hassan El Lol” with the late actor Ahmed Zaki.
-                                    Refusing stereotypical roles of the innocent blond girl that she was offered, delayed her return till 2008 playing the role of a police officer in the movie “Ashraf Haramy”.
-                                    Focusing on TV once more, she performed several roles in a variety of sitcoms and drama series until her return to the silver screen “Al Feel Azraq” in 2014.
-                                    In 2015 she starred in the film  ”Khareg Al-khedma” where she won the Best Actress Award at the 42nd Egyptian Cinema Film Association Festival.
-                                    Followed by several distinguished performances, for her performance in “Al-Deif” she won the Excellence  Award from the Egyptian Association of Film.
-                                    Writers and Critics. Away from entertainment spotlights, Reda is known to be a strong advocate for animal rights and strong sense of social
-                                    responsibility where she was selected as Ambassador for the Egyptian Autistic Society in 2019.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-magued hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Magued osman
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Magued Osman, is a Professor of Statistics at the Faculty of Economics and Political Science at Cairo University.
-                                    He is known regionally and internationally as a prominent expert in social statistics and public opinion research.
-                                    Osman is the Chairman of Telecom Egypt (WE) and the Founder and CEO of Baseera, the Egyptian Center for Public Opinion Research,
-                                    the first independent public opinion polling institution in Egypt. In 2011, he was appointed Minister of Communication and Information Technology,
-                                    the first Minister after the 2011 Revolution. Prior to 2011, he held key positions including Director of the Information and Decision Support Center (IDSC),
-                                    the thinktank of the Egyptian Cabinet of Ministers and also appointed Director of the Cairo Demographic Center. Osman had significant contributions in social,
-                                    demographic and population research during his role as a research professor at the Social Research Center at the American University in Cairo.
-                                    He is the current Chairman of WE (Telecom Egypt) and member of the National Council for Women (NCW). He is also the Vice Chairman of the Arab Union for Statisticians,
-                                    member of the International Advisory Board (School of Global Affairs & Public Policy – American University in Cairo),
-                                    member of the Board of Trustees at the French University in Egypt and member in the Board of Directors of Al-Masry Al-Youm newspaper.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-mervat hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Mervat abou oaf
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Mervat Abou Oaf is a professor of practice and former chair of the Journalism and Mass Communication Department at the School of Global Affairs and Public Policy at the American University in Cairo (AUC).
-                                    She has been on the teaching highest students’ evaluation scale ever since she started her academic career at AUC in 1995.
-                                    Abou Oaf earned a PhD from the University Autonoma, Spain, in the legislative, regulatory concentration on Egypt’s film industry.
-                                    She is considered among the most prominent educators and trainers of mass communication in the Arab region.
-                                    She is a trainer at the National Training Academy (NTA) in Egypt, a Directory Board Consultant to the Chamber of Cinema Industry (CCI) in Egypt and a member of the Foreign Press Association (FPA)..
-                                    For over 15 years, Abou Oaf has been involved with Egypt’s National Council for Women (NCW), currently in the international cooperation portfolio. She is also a member of the Women and Memory Forum (WMF),
-                                    an Egyptian non-profit established by female researchers and activists preoccupied with feminist studies.
-                                    She has been a board member at "Awladna Foundation” and Peace Ambassador for Art and Culture by the Egyptian Center for World Peace and Human Rights.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-nardine hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Nardine farag
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    MEDIA AMBASSADOR, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Nardine Farag is a multitalented actress, radio and TV presenter.
-                                    Her career kicked off in 2008 as a radio presenter in the Egyptian radio station Nogoom FM.
-                                    Her talent was quickly recognized by everyone, which paved the road to her appointment as a Director of the Egyptian radio station “Hits FM”. 2008  TV,
-                                    she presented a women’s program tackling focus issues essential for Egyptian women. on OTV the third and fourth seasons of Arabs Got Talent Extra as well as “ET Bel Arabi”.
-                                    Her talent and glamorous appearance was brought to everyone’s attention only to open acting opportunities for her.
-                                    In 2016, she took a role in the drama series “Foq mostawa al shobohat”. Following this came roles in “Al-hisab Yigma’a” (2017),
-                                    “Le’bet Newton” (2021), “Qasr el Nil” (2021) and the latest horror hit series “Room 207”.
-                                    Her Egyptian features, education and charisma made her the perfect selection to present the historical
-                                    ”Pharoah’s Golden Parade” where 22 mummies were transported from the Egyptian Museum to the National Museum of Egyptian Civilization.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-nesrine hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Nesreen el molla
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Nesreen El Molla is the Programme Manager for Civil Society Engagement at UN Women Headquarters;
-                                    providing strategic support to civil society and youth organizations across the globe. She is an expert in programme management, monitoring and evaluation,
-                                    partnerships, strategic planning, and gender-sensitive programming.
-                                    She began her career at the Egyptian Cabinet of Ministers leading the International Cooperation Team which was a steppingstone to her career in international organizations.
-                                    She was appointed as Manager for EU funded Twinning and Technical Assistance Programmes at the Ministry of International Cooperation. Following the EU,
-                                    she entered the UN by heading the Monitoring & Evaluation Unit at the World Food Program (WFP) Country Office in Egypt.
-                                    In 2017. El Molla later joined UN Women’s Regional Office for Arab States and recently transferred to UN Women Headquarters in New York.
-                                    El Molla completed several international assignments in different capacities including development settings,
-                                    refugee camp settings as well as host communities in Jordan, Lebanon, Yemen, and Iraq.
-                                    She also supported women engagement and advocacy in intergovernmental spaces as well as women engagement in peace processes; including her support to the office of the UN Special Envoy to Syria.
-                                    El Molla holds a Ph.D in Political Science from Cairo University with highest honors.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-samiha hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Samiha fawzy
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Dr. Samiha Fawzy is A Professor of Economics at Cairo University and appointed as Deputy Director of the Egyptian Center for Economic Studies (ECES),
-                                    a leading public policy think tank. Dr. Fawzy has significant contributions to field of economic research making her a recognized expert in Egypt and the MENA region.
-                                    In 2011, she was appointed Minister of Trade and Industry following the 2011 Revolution,. Prior to that, Dr. Fawzy was First Assistant to the Minister of Trade and Industry,
-                                    and a board member of the National Telecommunication Regulatory Authority (NTRA), the Egyptian Bank for Exports Development ,the National Council for Women, and the General Authority for Investment. 
-                                    She has published extensively on various topics, including trade, industrial economics, investment theories, multinational corporations and corporate governance. Her contributions to the Womenovation
-                                    Foundation in its very initial planning and conceptualization were quite significant. Furthermore, her passion and commitment  to empower Egyptian women and promote local innovative
-                                    projects make her the ideal resource expert to women’s economic empowerment.
-                                    Dr. Fawzy earned her Ph.D in Economics from Cairo University in 1984.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-samira hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Samira rashwan
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Samira Rashwan is a recognized expert in sustainable development and public policy.
-                                    with over 10 years experience. She is currently appointed at the National Council for
-                                    Women (NCW) actively involved in diverse domains and playing a crucial role on the strategic
-                                    and implementation levels. She is the Technical Coordinator for the EU funded project “Increasing
-                                    Women’s Participation in Public Life”. Rashwan is also a Peace and Security Consultant for UN Women.
-                                    She earned a Master’s degree in International Law in 2014 from Ain Shams University and another Master in Development Cooperation from Ewha University in South Korea,
-                                    which she completed in 2018. Throughout her career, she handled responsibilities of legal research, writing reports,
-                                    coordinating development cooperation programmes/projects in the framework of sustainable development and gender equality.
-                                    Moreover, Rashwan was selected many times to represent Egypt in international and regional conferences and forums.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-ghada hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Ghada barsoum
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    trustee, Womenovation Foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Ghada Barsoum is a tenured Associate Professor chairing the Department of Public Policy and Administration at the American University in Cairo (AUC).
-                                    Barsoum has more than sixty publications including articles in reputable top peer-reviewed journals; technical reports, book chapters, encyclopedia entries,
-                                    policy papers and a book on women's employment.
-                                    Her publications and academic courses focus on issues pertaining to social policies in the Middle East,
-                                    employment policies, green jobs, gender, and higher education policies.
-                                    Barsoum has consulted for a number of organizations including the ILO, UNESCO, UNFPA, UNDP, UNICEF, GIZ and the World Bank.
-                                    Prior to joining AUC, Barsoum was appointed as Research Associate at the Population Council, West Asia and North Africa Office,
-                                    where she spearheaded efforts for a national survey on youth in Egypt. Barsoum earned a PhD in Sociology from the University of Toronto and a Master degree from AUC.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-WALID hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Walid osman
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    CEO, Womenovation foundation
-                                </h4>
-                                <p class="modal__text">
-                                    Walid Osman is the CEO of the Womenovation Foundation and the one who initated the idea and conceptualized it. 
-                                    He started the concept development in late 2022 during his appointment as a Policy Specialist at a USAID Project (Economic Governance Activity) in Egypt. 
-                                    Osman is an expert in communications for development and perception studies and specifically perception of sustainable development issues. He began his career with a UNDP social
-                                    marketing project focusing on children issues where he nationally coordinated mass media campaigns on FGM, child protection, child education and child labor. 
-                                    His success in the “Red Card to Child Labor” campaign during the African Cup of Nations made him the perfect candidate for his appointment asCommunications Officer at ILO’s Cairo Office. 
-                                    Moving to corporate communication, he moved to Starcom, part of Publicis Group Media (third largest globally) to manage all the brands of Mondolez and GlaxoSmithkline.. He was also appointed by the Dutch Ministry of Foreign Affairs as Public Diplomacy Officer, MENA besides teaching at the Political Mass Media Department at the Future University in Egypt. Osman earned a Master in International Media Studies from Deutsche Welle Academy, in Germany and finalizing a a PhD in International Communication from the Free University of Berlin.
-                                    Osman was selected to represent Egypt in the fifth Managing Global Governance program over a period of six  months in Germany.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-MARIAM hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    Mariam waleed
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    INTERN, ENTREPRENEUR & VISUAL ARTIST WOMENOVATION FOUNDATION
-                                </h4>
-                                <p class="modal__text">
-                                    Mariam Waleed studies Statistics at the Faculty of Economics and Political Science at Cairo University. Mariam is passionate about sustainable development, 
-                                    establishing a career in Statistics and above all she is a talented artist making her combination of interests unique and diverse. 
-                                    Mariam’s artwork was displayed in COP27 only indicating a portion of her potential. Mariam is currently emplyed by Baseera, 
-                                    supporting our Foundsation wiuthout forgetting her studies and able to excel academically.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal modal-HALA hidden">
-                        <a href="#" class="modal__close">&times;</a>
-                        <div class="modal_content">
-                            <div class="modal__right">
-                                <h4 class="heading-secondary u-margin-bottom-md">
-                                    HALA AGROUDY
-                                </h4>
-                                <h4 class="heading-tertiary u-margin-bottom-md">
-                                    INTERN, ENTREPRENEUR & VISUAL ARTIST WOMENOVATION FOUNDATION
-                                </h4>
-                                <p class="modal__text">
-                                    Hala Agroudy is a graduating senior student at the Faculty of Commerce, Cairo University. She is an ambitious caliber with refined artistic taste.  
-                                    Her life as a student goes far beyond her academic studies. Very acvtive in. 
-                                    extracurricular activities, Hala’s creativity was witnessed on an international level when one of her artwork was selected for display at COP27. 
-                                    Never failing to amaze  people around her, in the meantime she is setting up her own business.
+                                <p>
+                                    We imagined the amount of undiscovered talents within these women and envisaged the possible economic returns for them,
+                                    their families, children’s education and quality of life, so we established ...
+                                    <a href="#" class="hover_wrap">
+                                        WOMENOVATION
+                                        <span class="hover_img" style="background-image: url(&quot;assets/imgs/logo/logo-black.png&quot;); transform: translate(100px, 400px);"></span>
+                                    </a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="clickable-overlay hidden"></div>
-            </div>
-        </section>
 
-    </main>
+                <!--Mission & Vission-->
+                <section id="mv" name="mv" class="service__detail">
+                    <div class="container g-0 line pb-140">
+                        <div class="line-3"></div>
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <div class="sec-title-wrapper">
+                                    <h2 class="sec-title title-anim" style="perspective: 400px;">
+                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 315px 23.4px; transform: translate3d(0px, 0px, 0px); opacity: 1;">Mission & Vision</div>
+                                </div>
+                            </div>
 
-    <footer id="footer" class="footer"></footer>
+                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
 
-    <script src="https://kit.fontawesome.com/39f166e9f2.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                                <div class="service__detail-content">
+                                    <h2>Mission</h2>
+                                    <p>
+                                        Support and strengthen the local art and design industry and optimize exceptional talents in talents in creating decent jo opportunities for women and promoting a culture of gender equality.
+                                    </p>
+                                    <h2>Vision</h2>
+                                    <p>
+                                        A global culture respecting women’s right to independently make decisions where all forms of gender violence and gender inequalities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End Mission & Vission-->
+                <!-- Testimonial area start -->
+                <section id="ceo" name="ceo" class="testimonial__area-2">
+                    <div class="container g-0 line pb-140">
+                        <span class="line-3"></span>
 
-    
+                        <div class="row g-0">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                                <div class="testimonial__video">
+                                    <img class="w-100" src="assets/imgs/team/ceo.jpg" alt="ceo">
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                                <div class="testimonial__slider-wrapper-2">
+                                    <div class="swiper testimonial__slider">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide testimonial__slide">
+                                                <div class="testimonial__inner-2">
+                                                    <h2 class="testimonial__title-2">Founder & CEO</h2>
+                                                    <p class="testimonial__text-2">
+                                                        Walid Osman, is the Founder and Chief Executive Officer of Womenovation Foundation. Since 2022 he managed to gather a diverse group of Co-founders
+                                                        and Board of Trustees to support him improve the lives of millions of Egyptian women. In less than a year, he managed to make the Foundation an
+                                                        appealing partner for government institutions, Universities, private secrtor companies and international development organizations.
+                                                    </p>
+                                                    <h3 class="testimonial__author">Walid Osman</h3>
+                                                    <h4 class="testimonial__role">CEO, Founder</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide testimonial__slide">
+                                                <div class="testimonial__inner-2">
+                                                    <h2 class="testimonial__title-2">Founder & CEO</h2>
+                                                    <p class="testimonial__text-2">
+                                                        Prior to establishing Womenovation, Osman has been employed as a Media, Communication & Development Specialist for governments,
+                                                        global media and advertising giants, international donors, the United Nations besides to teaching at the Department of Political
+                                                        Mass Media at the Future University in Egypt. Through his professional experience exceeding 15 years, he gained experience in social marketing,
+                                                        advocacy, campaigning, branding, multimedia journalism, public relations, advertising, media planning, governance, project management,
+                                                        public diplomacy, event management and public opinion research.
+                                                    </p>
+                                                    <h3 class="testimonial__author">Walid Osman</h3>
+                                                    <h4 class="testimonial__role">CEO, Founder</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide testimonial__slide">
+                                                <div class="testimonial__inner-2">
+                                                    <h2 class="testimonial__title-2">Founder & CEO</h2>
+                                                    <p class="testimonial__text-2">
+                                                        In 2009, he represented Egypt at the prestigious Management Global Governance Academy,
+                                                        offered at the German Institute of Development and Sustainability in Bonn, Germany.
+                                                        He grew up between the USA where he was born, Saudi Arabia, and Egypt, and later lived in UAE, Germany, and Switzerland.
+                                                        His international exposure fostered his understanding of different cultures and ability to communicate effectively with mentalities of intercultural differences.
+                                                        His analytical nature and eye. generated his interest in Intercultural Communication, a domain in which he delivers professional training workshops.
+                                                        Osman is fluent in English, Arabic, and German with a personal interest in art and design, the inspiration behind Womenovation.
+                                                    </p>
+                                                    <h3 class="testimonial__author">Walid Osman</h3>
+                                                    <h4 class="testimonial__role">CEO, Founder</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide testimonial__slide">
+                                                <div class="testimonial__inner-2">
+                                                    <h2 class="testimonial__title-2">Founder & CEO</h2>
+                                                    <p class="testimonial__text-2">
+                                                        Osman’s professional edge lies in his in-depth knowledge of communication disciplines combined with expertise in sustainable development from NGOs,
+                                                        governmental institutions and private sector companies across different continents..
+                                                        His previous employers include the Government of Egypt, ILO, Deutsche Welle, Telecom Egypt, Publicis Group Media, Embassy of the Netherlands, and USAID.
+                                                        He holds a Master of Arts in International Media Studies and a Bachelor of Arts in Integrated Marketing Communication.
+                                                    </p>
+                                                    <h3 class="testimonial__author">Walid Osman</h3>
+                                                    <h4 class="testimonial__role">CEO, Founder</h4>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial__pagination">
+                                        <div class="prev-button"><i class="fa-solid fa-arrow-right"></i></div>
+                                        <div class="next-button"><i class="fa-solid fa-arrow-left"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonial area end -->
+                <section id="board" name="board" class="team__area-7" style="padding-bottom:50px;">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <div class="sec-title-wrapper">
+                                    <h2 class="sec-title title-anim">Board of Trustees</h2>
+                                </div>
+                                <div class="parent">
+                                    <div class="circle" id="sample-text">
+                                        <h1>Womenovation</h1>
+                                    </div>
+                                    <div class="image-holder">
+                                        <div class="child1">
+                                            <a class="modal-trigger" data-modal="azza">
+                                                <img data-text="A" src="assets/imgs/team/13.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="child2">
+                                            <a class="modal-trigger" data-modal="lobna">
+                                                <img data-text="B" src="assets/imgs/team/1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child3">
+                                            <a class="modal-trigger" data-modal="salma">
+                                                <img data-text="C" src="assets/imgs/team/4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child4">
+                                            <a class="modal-trigger" data-modal="ghada">
+                                                <img data-text="D" src="assets/imgs/team/5.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child5">
+                                            <a class="modal-trigger" data-modal="samiha">
+                                                <img data-text="E" src="assets/imgs/team/10.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child6">
+                                            <a class="modal-trigger" data-modal="mervat">
+                                                <img data-text="F" src="assets/imgs/team/7.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child7">
+                                            <a class="modal-trigger" data-modal="nesreen">
+                                                <img data-text="G" src="assets/imgs/team/9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child8">
+                                            <a class="modal-trigger" data-modal="nardine">
+                                                <img data-text="H" src="assets/imgs/team/8.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child9">
+                                            <a class="modal-trigger" data-modal="amal">
+                                                <img data-text="I" src="assets/imgs/team/2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child10">
+                                            <a class="modal-trigger" data-modal="hanan">
+                                                <img data-text="J" src="assets/imgs/team/3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child11">
+                                            <a class="modal-trigger" data-modal="sherin">
+                                                <img data-text="H" src="assets/imgs/team/11.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child12">
+                                            <a class="modal-trigger" data-modal="medhat">
+                                                <img data-text="I" src="assets/imgs/team/12.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="child13">
+                                            <a class="modal-trigger" data-modal="maged">
+                                                <img data-text="J" src="assets/imgs/team/6.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-Lobna -->
+                                    <div class="modal" id="lobna">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Lobna Helal
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Lobna Helal
+                                                </h1>
+                                                <h3>
+                                                    Chairwoman, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Lobna Helal is a multitalented woman known for her unique expertise in the banking field.
+                                                    She is currently the Chairwoman of City Edge Developments and a non-executive Board member at Telecom Egypt.
+                                                    Prior to that, Helal was the Deputy Governor of the Central Bank of Egypt (CBE), the first and only woman ever appointed in this position.
+                                                </p>
+                                                <p>
+                                                    Helal has held numerous key positions at esteemed institutions such as the National Investment Bank, Nasser Social Bank, and the Social Housing Fund.
+                                                    Her achievements have not gone unnoticed as she was awarded the AFI Advocacy Champion Gender Award and appointed as Gender Ambassador.
+                                                </p>
+                                                <p>
+                                                    In 2016, she was named one of the Top 50 Most Influential Women in the Egyptian Economy. Furthermore, she was ranked second most powerful businesswoman in Forbes Magazine’s 100 Most Powerful Women in the Middle East and North Africa in 2016 and 2017.
+                                                    Helal holds a Master of Arts in Economics from the American University in Cairo. Her exceptional knowledge and expertise make her an invaluable asset to Womenovation with her fascinating leadership and a will to make a real change in the lives of millions of Egyptian women.uam repellendus debitis nulla, rerum officia itaque, sunt nihil sequi quod perspiciatis, animi quas voluptates velit aperiam voluptatem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-hanan -->
+                                    <div class="modal" id="hanan">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Hanan Girgis
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Hanan Girgis
+                                                </h1>
+                                                <h3>
+                                                    Treasurer, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Hanan Girgis is an accomplished executive and co-founder of Baseera, currently serving as Executive Vice President.
+                                                    Her expertise in public opinion, quantitative research, and her in-depth approach in research have earned her international acclaim.
+                                                    Girgis holds a Bachelor's degree, a Master's degree, and a Ph.D. in Statistics, all of which she obtained from the faculty of Economics and Political Science at Cairo University.
+                                                </p>
+                                                <p>
+                                                    Her exceptional ability to integrate academic and practical experience in social and demographic research is evident in her contributions to several
+                                                    research projects towards the development of national strategies such as the National Strategy for Population and Development (2015-2020),
+                                                    the National Strategy for Women's Empowerment (2030), and the National Strategy for Childhood and Motherhood (2015-2020).
+                                                </p>
+                                                <p>
+                                                    Beyond her professional and technical expertise, Girgis has a talent for learning new disciplines every day.
+                                                    Those who know her describe her as a multitasker, responsible and persistent leader.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-amal -->
+                                    <div class="modal" id="amal">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Amal mowafy
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Amal mowafy
+                                                </h1>
+                                                <h3>
+                                                    Deputy chairwoman, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Amal Mowafy is a distinguished professional with an impressive track record of accomplishments.
+                                                    She is currently the of Chief of Party at USAID Egyptian Pioneers Project, while also serving as an Adjunct Faculty Member in the Economics Department at the American University in Cairo. Additionally, Mowafy is a board member of the Egypt Network for Integrated Development and a trustee of the Alkorra Foundation for Sustainable Development.
+                                                </p>
+                                                <p>
+                                                    Mowafy's experience spans over a decade at the International Labour Organization (ILO). During her last assignment in Abidjan, she served as the Regional Technical Specialist for Youth Employment in Africa. Before joining ILO, she worked for three years with USAID and seven years at the Ministry of International Cooperation.
+                                                </p>
+                                                <p>
+                                                    Mowafy holds two degrees from the American University in Cairo, a Bachelor's in Economics and a Master's in Public Administration, both with highest honors. Her outstanding contributions have earned her numerous accolades, including the ILO Centennial Recognition Award and the distinction of being named one of the Top 50 Most Influential Women in the Egyptian Economy in 2016. She has also received two USAID On the Spot Cash Awards for her efforts in developing US-Egyptian university partnerships.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-salma -->
+                                    <div class="modal" id="salma">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Salma elfawal
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Salma elfawal
+                                                </h1>
+                                                <h3>
+                                                    SECRETARY GENERAL, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Salma Elfawal has over 18 years of experience in human rights and social development in Egypt.. She took the lead in project design, resource mobilization, strategic planning, and programme management. Salma is currently employed at UNICEF taking responsibility of the child protection portfolio both on the policy and programme levels.
+                                                </p>
+                                                <p>
+                                                    In her previous role as Development Cooperation Programme Manager at the Embassy of the Netherlands in Cairo, she managed diverse portfolios including women empowerment, gender equality, gender-based violence, sexual and reproductive health and rights, child protection, migration, access to justice, entrepreneurship, and financial inclusion..
+                                                </p>
+                                                <p>
+                                                    Moreover, she wrote and published several studies on relevant international development best practices and the possibility of their adaptation in the Egyptian context. Salma holds a Master’s degree in Globalization and Development from the School of Oriental and African Studies at the University of London.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-ghada -->
+                                    <div class="modal" id="ghada">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Ghada barsoum
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Ghada barsoum
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Ghada Barsoum is a tenured Associate Professor chairing the Department of Public Policy and Administration at the American University in Cairo (AUC). Barsoum has more than sixty publications including articles in reputable top peer-reviewed journals; technical reports, book chapters, encyclopedia entries, policy papers and a book on women's employment.
+                                                </p>
+                                                <p>
+                                                    Her publications and academic courses focus on issues pertaining to social policies in the Middle East, employment policies, green jobs, gender, and higher education policies. Barsoum has consulted for a number of organizations including the ILO, UNESCO, UNFPA, UNDP, UNICEF, GIZ and the World Bank.
+                                                </p>
+                                                <p>
+                                                    Prior to joining AUC, Barsoum was appointed as Research Associate at the Population Council, West Asia and North Africa Office, where she spearheaded efforts for a national survey on youth in Egypt. Barsoum earned a PhD in Sociology from the University of Toronto and a Master degree from AUC.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-maged -->
+                                    <div class="modal" id="maged">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Magued Osman
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Magued Osman
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Magued Osman, is a professor of statistics at the Faculty of Economics and Political Science at Cairo University. He is known regionally and internationally as a prominent expert in social statistics and public opinion research. Osman is the Chairman of Telecom Egypt (WE) and the Founder and CEO of Baseera, the Egyptian Center for Public Opinion Research, the first independent public opinion polling institution in Egypt. In 2011, he was appointed Minister of Communication and Information Technology, the first Minister after the 2011 Revolution.
+                                                </p>
+                                                <p>
+                                                    Prior to 2011, he held key positions including Director of the Information and Decision Support Center (IDSC), the thinktank of the Egyptian Cabinet of Ministers and also appointed Director of the Cairo Demographic Center. Osman had significant contributions in social, demographic and population research during his role as a research professor at the Social Research Center at the American University in Cairo. He is the current Chairman of WE (Telecom Egypt) and member of the National Council for Women (NCW).
+                                                </p>
+                                                <p>
+                                                    He is also the Vice Chairman of the Arab Union for Statisticians, member of the International Advisory Board (School of Global Affairs & Public Policy – American University in Cairo), member of the Board of Trustees at the French University in Egypt and member in the Board of Directors of Al-Masry Al-Youm newspaper.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-samiha -->
+                                    <div class="modal" id="samiha">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Samiha Fawzy
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Samiha Fawzy
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Dr. Samiha Fawzy is A Professor of Economics at Cairo University and appointed as Deputy Director of the Egyptian Center for Economic Studies (ECES), a leading public policy think tank. Dr. Fawzy has significant contributions to field of economic research making her a recognized expert in Egypt and the MENA region.
+                                                </p>
+                                                <p>
+                                                    In 2011, she was appointed Minister of Trade and Industry following the 2011 Revolution,. Prior to that, Dr. Fawzy was First Assistant to the Minister of Trade and Industry, and a board member of the National Telecommunication Regulatory Authority (NTRA), the Egyptian Bank for Exports Development ,the National Council for Women, and the General Authority for Investment. She has published extensively on various topics, including trade, industrial economics, investment theories, multinational corporations and corporate governance. 
+                                                </p>
+                                                <p>
+                                                    Her contributions to the Womenovation Foundation in its very initial planning and conceptualization were quite significant. Furthermore, her passion and commitment  to empower Egyptian women and promote local innovative  projects make her the ideal resource expert to women’s economic empowerment. Dr. Fawzy earned her Ph.D in Economics from Cairo University in 1984.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-mervat -->
+                                    <div class="modal" id="mervat">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Mervat Abou Oaf
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Mervat Abou Oaf
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Mervat Abou Oaf is a professor of practice and former chair of the Journalism and Mass Communication Department at the School of Global Affairs and Public Policy at the American University in Cairo (AUC). She has been on the teaching highest students’ evaluation scale ever since she started her academic career at AUC in 1995.
+                                                </p>
+                                                <p>
+                                                    Abou Oaf earned a PhD from the University Autonoma, Spain, in the legislative, regulatory concentration on Egypt’s film industry. She is considered among the most prominent educators and trainers of mass communication in the Arab region. She is a trainer at the National Training Academy (NTA) in Egypt, a Directory Board Consultant to the Chamber of Cinema Industry (CCI) in Egypt and a member of the Foreign Press Association (FPA).
+                                                </p>
+                                                <p>
+                                                    For over 15 years, Abou Oaf has been involved with Egypt’s National Council for Women (NCW), currently in the international cooperation portfolio. She is also a member of the Women and Memory Forum (WMF), an Egyptian non-profit established by female researchers and activists preoccupied with feminist studies. She has been a board member at "Awladna Foundation” and Peace Ambassador for Art and Culture by the Egyptian Center for World Peace and Human Rights.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-medhat -->
+                                    <div class="modal" id="medhat">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Medhat Medany
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Medhat Medany
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Medhat Medany is a distinguished expert in Human Resource Management in Egypt and the Middle East. In 1995, he founded "Promark," the first HR consultation firm in Egypt. For nearly two decades, he managed the firm as CEO until he transitioned to Chairman and delegated management responsibilities to his successor. Medany's outstanding expertise in Human Resource Management led to his appointment as Chairman of the Egyptian Human Resource Management Association.
+                                                </p>
+                                                <p>
+                                                    He has held numerous managerial positions in Egypt and the UAE throughout his career. Medany's achievements include the successful organizational restructuring of several organizations such as the National Bank of Egypt, the Ministry of Finance, the Central Bank of Egypt, and the Egyptian Customs Authority, among others. He is a Board Member of the National Management Institute, Baraka Group, Egypt Post, and B.Tech. Medany earned a Bachelor of Arts in English Literature from the Faculty of Arts at Ain Shams University in 1981.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-azza -->
+                                    <div class="modal" id="azza">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Azza Fahmy
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Azza Fahmy
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Azza Fahmy is a pioneer in Egyptian design, known for her innovative and successful work. With a career spanning decades, Fahmy has become an influential figure in her field and a representative of Egyptian culture and art. Born and raised in Sohag, Upper Egypt, Fahmy earned her Bachelor of Arts in Interior Design from Cairo University before embarking on a career in jewelry making. As one of the first female apprentices in Cairo's Khan El Khalili district, Fahmy soon established her own workshop and rapidly gained international fame.
+                                                </p>
+                                                <p>
+                                                    Fahmy's designs are rooted in Egyptian culture and heritage, which she often highlights in her work. Her Houses of the Nile collection was an early example of her efforts to highlight often-overlooked aspects of Egyptian life. Fahmy's calligraphy pieces, featuring Arabic poems and proverbs, have become an iconic trend in the region and inspired many others.
+                                                </p>
+                                                <p>
+                                                    Fahmy has expanded her reach beyond jewelry, collaborating with fashion designers such as Julien Macdonald, Justin Thornton, and Thea Bregazzi. She has also partnered with cultural institutions, such as the British Museum, to create custom collections. In 2013, Fahmy established The Design Studio by Azza Fahmy in partnership with the Alchimia Contemporary Jewelry School in Florence. The studio, the first of its kind in Egypt and the Middle East, serves as a jewelry vocational school and positions Egypt as an international hub for jewelry design.
+                                                </p>
+                                                <p>
+                                                    Fahmy's passion for her work is evident in her designs, which reflect her pride in Egyptian culture and heritage. She has used her experience and success to promote young and aspiring jewelers and to share her love of her country and its traditions with the world.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-nardine -->
+                                    <div class="modal" id="nardine">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Nardine Farag
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Nardine Farag
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Nardine Farag is a multitalented actress, radio and TV presenter. Her career kicked off in 2008 as a radio presenter in the Egyptian radio station Nogoom FM. Her talent was quickly recognized by everyone, which paved the road to her appointment as a Director of the Egyptian radio station “Hits FM”. 2008  TV, she presented a women’s program tackling focus issues essential for Egyptian women. on OTV the third and fourth seasons of Arabs Got Talent Extra as well as “ET Bel Arabi”.
+                                                </p>
+                                                <p>
+                                                    Her talent and glamorous appearance was brought to everyone’s attention only to open acting opportunities for her.  In 2016, she took a role in the drama series “Foq mostawa al shobohat”. Following this came roles in “Al-hisab Yigma’a” (2017), “Le’bet Newton” (2021), “Qasr el Nil” (2021) and the latest horror hit series “Room 207”.
+                                                </p>
+                                                <p>
+                                                    Her Egyptian features, education and charisma made her the perfect selection to present the historical ”Pharoah’s Golden Parade” where 22 mummies were transported from the Egyptian Museum to the National Museum of Egyptian Civilization.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-nesreen -->
+                                    <div class="modal" id="nesreen">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Nesreen El Molla
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Nesreen El Molla
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Nesreen El Molla is the Programme Manager for Civil Society Engagement at UN Women Headquarters; providing strategic support to civil society and youth organizations across the globe. She is an expert in programme management, monitoring and evaluation, partnerships, strategic planning, and gender-sensitive programming.
+                                                </p>
+                                                <p>
+                                                    She began her career at the Egyptian Cabinet of Ministers leading the International Cooperation Team which was a steppingstone to her career in international organizations. She was appointed as Manager for EU funded Twinning and Technical Assistance Programmes at the Ministry of International Cooperation. Following the EU, she entered the UN by heading the Monitoring & Evaluation Unit at the World Food Program (WFP) Country Office in Egypt. In 2017.
+                                                </p>
+                                                <p>
+                                                    El Molla later joined UN Women’s Regional Office for Arab States and recently transferred to UN Women Headquarters in New York. El Molla completed several international assignments in different capacities including development settings, refugee camp settings as well as host communities in Jordan, Lebanon, Yemen, and Iraq. She also supported women engagement and advocacy in intergovernmental spaces as well as women engagement in peace processes; including her support to the office of the UN Special Envoy to Syria. El Molla holds a Ph.D in Political Science from Cairo University with highest honors.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal-sherin -->
+                                    <div class="modal" id="sherin">
+                                        <div class="modal-sandbox"></div>
+                                        <div class="modal-box">
+                                            <div class="modal-header">
+                                                <h1>
+                                                    Shereen Reda
+                                                </h1>
+                                                <div class="close-modal">&#10006;</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>
+                                                    Shereen Reda
+                                                </h1>
+                                                <h3>
+                                                    Trustee, Womenovation Foundation
+                                                </h3>
+                                                <br />
+                                                <p>
+                                                    Shereen Reda is a renowned actress in Egypt, with a massive fan base across the Arab region. Her career began as a model in the advertising industry at the tender age of 11, igniting her passion for fashion. She pursued fashion studies in Los Angeles and returned to Egypt in 1989. In the same year, she starred in the popular TV program "Fawazeer El Fonoon", which featured 30 riddle-based episodes aired during the month of Ramadan and celebrated for its high viewership across the Arab region.
+                                                </p>
+                                                <p>
+                                                    In the mid-nineties, Reda ventured into the film industry, starring in two films "Nazwa" and "Hassan El Lol" with the late actor Ahmed Zaki. However, she took a break from acting after rejecting stereotype roles that typecast her as the innocent blonde girl. She returned to the silver screen in 2008, playing the role of a police officer in the movie "Ashraf Haramy". Reda then focused on TV, featuring in various sitcoms and drama series until her return to the big screen in 2014 with "Al Feel Azraq".
+                                                </p>
+                                                <p>
+                                                    Reda's outstanding performances have earned her numerous awards and accolades, including the Best Actress Award at the 42nd Egyptian Cinema Association Film Festival for her role in "Khareg Al-khedma". She also received the Excellence Award from the Egyptian Association of Film Writers and Critics for her performance in "Al-Deif".
+                                                </p>
+                                                <p>
+                                                    Aside from her successful acting career, Reda is a passionate advocate for animal rights and social responsibility. In 2019, she was appointed as Ambassador for the Egyptian Autistic Society. She is. one of the first Board Members. of the Womenovation Foundation strongly believing in her mission of promoting Egyptian designers and being proactive in strengthening a culture of gender equality.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Aditional Styles -->
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+                <!-- STORY area start -->
+                <section id="story" name="story" class="testimonial__area-4 ">
+                    <div class="container g-0 line_4">
+                        <div class="line-col-4">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <div class="testimonial__sec-title text-anim">
+                                    <!--<h2 class="sec-subtile-6">Testimonials</h2>-->
+                                    <h3 class="sec-title-6 title-anim pt-100">OUR STORY</h3>
+                                    <!--<p>We are Trusted by 10,000+ global customers teams like have projects with this template</p>-->
+                                </div>
+                            </div>
+                            <div class="swiper testimonial__slider-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide testimonial__slide-4">
+                                        <!--<img class="testimonial__img-4" src="assets/imgs/testimonial/4/1.jpg" alt="Testimonial Image">-->
+                                        <div class="testimonial__info-4">
+                                            <h4 class="testimonial__feedback-4">The Spark</h4>
+                                            <p>
+                                                While analyzing data about women,  Walid Osman, Womenovation’s Founder,
+                                                noticed that 75% of Egyptian women eligible to work are inactive in the economy
+                                                and concluded that these women are either working informally or living as dependents.
+                                                His childhood interest in art and design sparked the idea of engaging those women
+                                                in elevating the design industry while elevating their economic status.
+                                            </p>
+                                            <!--<h5 class="testimonial__name-4">Jessica Sherlock</h5>
+                                            <h6 class="testimonial__role-4">Manager, Oitaka </h6>-->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial__slide-4">
+                                        <!--<img class="testimonial__img-4" src="assets/imgs/testimonial/4/2.jpg" alt="Testimonial Image">-->
+                                        <div class="testimonial__info-4">
+                                            <h4 class="testimonial__feedback-4">Concept Development</h4>
+                                            <p>
+                                                After a period of research and drafting ideas, Osman developed an initial concept note titled
+                                                “The Womenovation Initiative,” which he designed as a set of activities aiming to build the
+                                                capacities of women with artistic talents and provide them with opportunities in the most relevant industries.
+                                                Over the past few years, the National Council for Women (NCW) has achieved significant progress in the framework
+                                                of women's empowerment. Consequently, the concept note was shared with NCW, the national institution responsible
+                                                for ensuring women and men are equal in terms of their economic, political, and legislative rights.
+                                            </p>
+                                            <!--<h5 class="testimonial__name-4">Sharoon Kavin</h5>
+                                            <h6 class="testimonial__role-4">CEO, Sharoon</h6>-->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial__slide-4">
+                                        <!--<img class="testimonial__img-4" src="assets/imgs/testimonial/4/3.jpg" alt="Testimonial Image">-->
+                                        <div class="testimonial__info-4">
+                                            <h4 class="testimonial__feedback-4">Going Public</h4>
+                                            <p>
+                                                By overseeing the opportunity in the initial concept note,
+                                                NCW supported the concept suggesting its execution in an institutionalized approach
+                                                operating independently under a civil society framework. Moreover, NCW believed in the
+                                                importance of recognizing the efforts of the concept developer, which led to Womenovation’s
+                                                evolution into a Foundation. On Gender Day of COP 27, Womenovation’s Founder Walid Osman publicly
+                                                presented an overview of Womenovation’s institutional framework and scope for the first time.
+                                            </p>
+                                            <!--<h5 class="testimonial__name-4">Sharly Mehroon</h5>
+                                            <h6 class="testimonial__role-4">Manager, Kavitan</h6>-->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial__slide-4">
+                                        <!--<img class="testimonial__img-4" src="assets/imgs/testimonial/4/3.jpg" alt="Testimonial Image">-->
+                                        <div class="testimonial__info-4">
+                                            <h4 class="testimonial__feedback-4">Launch</h4>
+                                            <p>
+                                                On 18 March 2023, the Womenovation Foundation had its official launch event at Cairo’s
+                                                downtown gathering a diversity of audiences including artists, government officials,
+                                                academics, diplomats, civil society organizations, private sector companies, students,
+                                                and media professionals. In the event, Womenovation’s mission and scope were presented
+                                                followed by short inspirational statements regarding the connection between development, art and design.
+                                                Speakers included H.E. Nevine El-Kabbaj, Minister of Social Solidarity, Maya Morsy, President of Egypt’s
+                                                National Council for Women, international jewelry designer Azza Famy, and prominent actress Shereen Reda.
+                                                Talks were followed by an art exhibition and a display of products by emerging local designers.
+                                            </p>
+                                            <!--<h5 class="testimonial__name-4">Sharly Mehroon</h5>
+                                            <h6 class="testimonial__role-4">Manager, Kavitan</h6>-->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial__slide-4">
+                                        <!--<img class="testimonial__img-4" src="assets/imgs/testimonial/4/3.jpg" alt="Testimonial Image">-->
+                                        <div class="testimonial__info-4">
+                                            <h4 class="testimonial__feedback-4">The Beginning</h4>
+                                            <p>
+                                                A well-planned launch event presenting a clear mission and impactful scope of work was followed by
+                                                connections with donors and stakeholders. Womenovation was able to grasp donor priorities,
+                                                expand its network, and submit proposals to donors. In July 2023, Womenovation received its first
+                                                funding approval from Alex Bank. The initial fund effective January 2024 is allocated to support
+                                                Womenovation’s project “Promoting Innovation.”
+                                            </p>
+                                            <!--<h5 class="testimonial__name-4">Sharly Mehroon</h5>
+                                            <h6 class="testimonial__role-4">Manager, Kavitan</h6>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial__btn-4">
+                                    <div class="prev-button swipper-btn"><i class="fa-solid fa-arrow-left"></i></div>
+                                    <div class="next-button swipper-btn"><i class="fa-solid fa-arrow-right"></i></div>
+                                    <div class="pagination testimonial__pagination-4">
+                                        <div class="pag"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- STORY area end -->
+                <!-- Brand area start -->
+                <section id="partners" name="partners" class="brand__area">
+                    <div class="container pt-140 pb-140">
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <h2 class="brand__title-3 title-anim">
+                                    Our Partners
+                                </h2>
+                                <div class="brand__list-3">
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/9.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/7.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/8.png" alt="Brand Logo">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Brand area end -->
+
+            </main>
+
+
+
+            <!-- Footer area start -->
+            <footer class="footer__area-6">
+                <div class="container g-0 line_4">
+                    <div class="line-col-4">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="footer__top-6 pt-100">
+                                <div class="footer__item-6">
+                                    <img class="footer__logo logo-light" src="assets/imgs/logo/site-logo-white-2.png" alt="Footer Logo">
+                                    <img class="footer__logo logo-dark" src="assets/imgs/logo/logo-black.png" alt="Footer Logo">
+                                    <p>
+                                        The Womenovation Foundation is a non-profit organization dedicated
+                                        to accelerate sustainable development through a specificfocus on gender.
+                                    </p>
+                                    <ul class="footer__social-6">
+                                        <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">Information</h2>
+                                    <ul class="footer__link-6">
+                                        <li><a href="whoweare.html">About Company</a></li>
+                                        <li><a href="get.html">Career</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">Contact Us</h2>
+                                    <ul class="footer__info-6">
+                                        <li>9 Hussein Ahmed Rashad St., Dokki - Giza, Egypt.</li>
+                                        <li><a href="tel:201550005555" class="phone">(+2) 01550005555 </a></li>
+                                        <li><a href="mailto:info@buildyexample.com">info@womenovation.org</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">newsletter</h2>
+                                    <form action="#">
+                                        <div class="footer__newsletter-6">
+                                            <input type="email" name="email" required placeholder="Enter your email">
+                                            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="footer__chekbox">
+                                            <input type="checkbox" id="check_box" name="checkbox">
+                                            <label>I’m okay with getting emails and having that activity and privacy policy.</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="footer__btm-6">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
+                                        <div class="footer__copyright-6">
+                                            <p>
+                                                © 2023 | Alrights reserved by <a href="https://codid.net/" target="_blank">{codid;}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
+                                        <div class="footer__nav">
+                                            <ul class="footer-menu menu-anim">
+                                                <li><a href="whoweare.html">Who WE Are</a></li>
+                                                <li><a href="whatwedo.html">What WE Do</a></li>
+                                                <li><a href="contact.html">contact</a></li>
+                                                <li><a href="get.html">Get Involved</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer area end -->
+        </div>
+    </div>
+
+
+    <!-- All JS files -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src='https://qmixi.github.io/slide-nav/dist/slideNav.js'></script>
+    <script src="assets/js/script.js"></script>
     <script>
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
 
-            loader.classList.add("loader--hidden");
-        })
+        $(".modal-trigger").click(function (e) {
+            e.preventDefault();
+            dataModal = $(this).attr("data-modal");
+            $("#" + dataModal).css({ "display": "block" });
+            // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+        });
 
-        $(function(){
-            $('#footer').load('common_components/footer.html')
-        })
+        $(".close-modal, .modal-sandbox").click(function () {
+            $(".modal").css({ "display": "none" });
+            // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+        });
     </script>
+
 </body>
+
+</html>

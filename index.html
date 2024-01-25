@@ -1,284 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Womenovation Foundation">
+
+    <title>Home - Womenovation</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/wc-mano-negra" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
 
-    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
-    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 
-    <title>Womenovation</title>
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/progressbar.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 
-<body class="sticky">
-    <div class="loader"></div>
-    <header id="header" class="nav">
-        <a href="index.html" class="navigation__logo-box">
-            <img src="img/logo.png"
-                    alt="Womenovation Foundation Logo"
-                    class="nav__logo" />
-        </a>
-        
-        <nav class="nav__main">
-            <ul class="nav__list">
-                <li class="navigation">
-                    <a href="index.html"><button type="button" class="btn nav_item">Home</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="aboutus.html"><button type="button" class="btn nav_item">About Womenovation</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="whoweare.html"><button type="button" class="btn nav_item">Meet the Team</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="#"><button type="button" class="btn nav_item">Get Involved</button></a>
-                </li>
-                <li class="navigation">
-                    <a href="contactus.html"><button type="button" class="btn nav_item">Contact Us</button></a>
-                </li>
-            </ul>
-        </nav>
 
-        <button class="nav-mobile">
-            <ion-icon class="nav-mobile__icon" name="menu-outline"></ion-icon>
-            <ion-icon class="nav-mobile__icon" name="close-outline"></ion-icon>
-        </button>
+<body>
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+
+    <!-- Preloader -->
+    <!--<div class="preloader">
+        <div class="loading">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+        </div>
+    </div>-->
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+
+
+    <!-- Go Top Button -->
+    <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <!-- Header area start -->
+    <header class="header__area-3">
+        <div class="header__inner-3">
+            <div class="header__logo-2">
+                <a href="index.html" class="logo-dark"><img src="assets/imgs/logo/logo-black.png" alt="Site Logo"></a>
+                <a href="index.html" class="logo-light"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Site Logo"></a>
+            </div>
+            <div class="header__nav-2">
+                <ul class="main-menu-3 menu-anim">
+                    <li><a href="index.html">home</a></li>
+                    <li>
+                        <a href="whoweare.html">Who We Are</a>
+                        <ul class="main-dropdown">
+                            <li><a href="whoweare.html#overview">OVERVIEW</a></li>
+                            <li><a href="whoweare.html#story">OUR STORY</a></li>
+                            <li><a href="whoweare.html#mv">MISSION & VISION</a></li>
+                            <li><a href="whoweare.html#ceo">FOUNDER & CEO</a></li>
+                            <li><a href="whoweare.html#board">BOARD OF TRUSTEES</a></li>
+                            <li><a href="whoweare.html#partners">PARTNERS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="whatwedo.html">What We Do</a>
+                        <ul class="main-dropdown">
+                            <li><a href="whatwedo.html#approach">APPROACH</a></li>
+                            <li><a href="whatwedo.html#projects">PROJECTS</a></li>
+                            <li><a href="whatwedo.html#events">EVENTS</a></li>
+                            <li><a href="whatwedo.html#innovation">INNOVATION</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GET INVOLVED</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="header__nav-icon-3">
+
+
+                <button id="open_offcanvas"><img src="assets/imgs/icon/menu-black.png" alt="Menubar Icon"></button>
+            </div>
+        </div>
     </header>
-    <main>
-        <!-- <section class="hero" style="display:flex;">
-            <div class="hero__items">
-                <div class="hero__item">
-                    <p class="heading-primary open-modal connect hero__text hero__text-1">
-                        Connect
-                    </p>
+    <!--<div class="header__search">
+        <form action="#">
+            <input type="text" name="s" id="s" placeholder="Search..">
+        </form>
+    </div>-->
+    <!-- Header area end -->
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+        <div class="offcanvas__body">
+            <div class="offcanvas__left">
+                <div class="offcanvas__logo">
+                    <a href="index.html"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Offcanvas Logo"></a>
                 </div>
-                <div class="hero__item">
-                    <p class="heading-primary open-modal inspire hero__text hero__text-2">
-                        Inspire
-                    </p>
+                <div class="offcanvas__social">
+                    <h3 class="social-title">Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
                 </div>
-                <div class="hero__item">
-                    <p class="heading-primary open-modal innovate hero__text hero__text-3">
-                        Innovate
-                    </p>
-                </div>
-                <div class="hero__item">
-                    <p class="heading-primary open-modal advocate hero__text hero__text-4">
-                        Advocate
-                    </p>
-                </div>
-            </div>
-        </section> -->
-        <section>
-            <div class="background-video-banner">
-                <video id="bgVideo" autoplay muted loop>
-                    <source src="vids/intro.mp4" type="video/mp4">
-                </video>
-                <a id="MuteButton" class="muted" onclick="toggleMute();">
-                </a>
-                <div class="content">
+                <div class="offcanvas__links">
+                    <ul>
+                        <li><a href="whoweare.html">About</a></li>
+                        <li><a href="contact">contact</a></li>
                 </div>
             </div>
-        </section>
+            <div class="offcanvas__mid">
+                <div class="offcanvas__menu-wrapper">
+                    <nav class="offcanvas__menu">
+                        <ul class="menu-anim">
+                            <li><a href="index.html">home</a> </li>
+                            <li><a href="whoweare.html">Who We Are</a></li>
+                            <li><a href="whatwedo.html">What We Do</a></li>
+                            <li><a href="#">GET INVOLVED</a></li>
 
-        <section class="ourstory">
-            <div class="ourstory1">
-
-                <div class="title">
-                    <h1>OUR STORY</h1>
-                    <p>we noticed that...</p>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-    
-                <div class="statistics">
-                    <div class="column">
-                        <p><span class="percent">75%</span> of Egyptian women eligible to work are</p>
-                        <img src="img/womenpercentage.png">
-                        <p class="economicparticipation"><span class="NOTtext">NOT</span> actively participating in the economy</p>
-                    </div>
-                    <div class="column">
-                        <p>Compared to men doing the same job,</p>
-                        <img src="img/bar.png">
-                        <p class="economicparticipation">women earn <span class="NOTtext">34% LESS</span></p>
-                    </div>
-                </div>
-               
-                <div class="onekYears">
-                    <p>For thousands of years, Egyptian women have been writing history and until today, they still inspire the world. 
-                        We believe in the power of these women's talent to elevate our society culturally and economically.</p>
-                    <p>Building on our history, we selected a mandate that...</p>
-                    <h2>CREATING MORE SPACE FOR WOMEN TO... </h2>
-                    <!-- <h2>LEARN FLOURISH & INNOVATE</h2> -->
-                </div>
-    
-                <div class="women_images">
-                    <div class="item"> 
-                        <img src="img/womanA.png">
-                        <figcaption>LEARN</figcaption>
-                    </div>
-                    <div class="item"> 
-                        <img src="img/womanB.png">
-                        <figcaption>FLOURISH</figcaption>
-                    </div>
-                    <div class="item"> 
-                        <img src="img/womanC.png">
-                        <figcaption>INNOVATE</figcaption>
-                    </div>
-                </div>
-                
-                <div class="tophalfcloser">
-                    <p>The power of art and design is evident in all disciplines of life. Art and design are able to visualize, fictionalize, express feelings, move emotions and represent identities, which gives them an exceptional power to reach and communicate. Art narrates stories, documents history, commemorates legends to construct timeless heritage for generations that follow. At Womenovation, our artistic focus, appreciation of design and concern about heritage is a reflection of our future-oriented vision and a strategic approach prioritizing the quality of life of upcoming generations.</p>
-                    <h2>OUR FOCUS ON EMPOWERING WOMEN, CONCERN ABOUT OUR HERITAGE 
-                        & INTENTION TO DEVELOP GREENER INNOVATIVE INDUSTRIES 
-                        </h2>
-                </div>
-
             </div>
-
-            <div class="ourstory2">
-
-                <div class="title">
-                    <h1>By understanding the importance of heritage we leave 
-                        and realizing possible economic opportunities generated by an innovative design industry, we started to...</h1>
+            <div class="offcanvas__right">
+                <div class="offcanvas__search">
+                    <form action="#">
+                        <input type="text" name="search" placeholder="Search keyword">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
-
-                <div class="thingsbegun">
-                    <h2 class="a">realize the tremendous opportunities awaiting millions of women</h2>
-                    <h2 class="b">imagine the size of unutilized creative minds and talents that could be hiding around us</h2>
-                    <h2 class="c">monetize potential talents and realize the economic impact on these women</h2>
+                <div class="offcanvas__contact">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li><a href="tel:(+2) 01550005555">(+2) 01550005555</a></li>
+                        <li><a href="mailto:info@womenovation.com">info@womenovation.org</a></li>
+                        <li>9 Hussein Ahmed Rashad St., Dokki - Giza, Egypt.</li>
+                    </ul>
                 </div>
+                <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+                <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
+            </div>
+            <div class="offcanvas__close">
+                <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas area end -->
 
-                <div class="families">
-                    <div class="column">
-                        <p>THEIR FAMILIES & QUALITY OF LIFE</p>
-                        <img src="img/framed.png">
-                    </div>
-                </div>
-                
-                <!-- <div class="families">
-                    <div class="column">
-                        <p>THEIR FAMILIES</p>
-                        <img src="img/framed.png">
-                    </div>
-                    <div class="subcolumn">
-                        <p>&</p>
-                    </div>
-                    <div class="column">
-                        <p>QUALITY OF LIFE</p>
-                        <img src="img/tree.png">
-                    </div>
-                </div> -->
 
-                <div class="founding">
-                    <!-- <p>we seized the opportunity to</p>
-                    <h2>EMPOWER WOMEN,</h2>
-                    <p>promote more responsible</p>
-                    <h2>GREEN INDUSTRIES</h2>
-                    <p>and enrich Egypt's</p>
-                    <h2>CONTEMPORARY ART SCENE</h2> -->
-                    <p>so we established...</p>
-                    <h1 class="coloredtitle"><span style="color: #AD9766">WOM</span><span style="color: #458BB4">ENO</span><span style="color: #00A8A8">VAT</span><span style="color: #5C913B">ION</span></p>
-                </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!-- woocomerce Slider -->
+                <div class="woocomerce__hero">
 
-                <!-- <div class="founding">
-                    <h2>WE SEIZED THE OPPURTUNITY TO EMPOWER WOMEN, REVIVE EGYPT'S CREATIVE INDUSTRY AND ENRICH ITS ART SCENE</p>
-                    <p>so we founded...</p>
-                    <h1 class="coloredtitle"><span style="color: #AD9766">WOM</span><span style="color: #458BB4">ENO</span><span style="color: #00A8A8">VAT</span><span style="color: #5C913B">ION</span></p>
-                </div> -->
+                    <div class="swiper woocomerce-active">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
 
-                
-
-                <div class="timeline">
-
-                    <div class="title">
-                        <img src="img/clock.svg">
-                    </div>
-
-                    <h1 class="timelinetitle">T I M E L I N E</h1>
-                    
-                    <div class="time_containerA">
-                        <p>JULY 2022</p>
-                    </div>
-
-                    <p class="launchtext">Conceptualizing Womenovation</p>
-
-                    <div class="timebox">
-                        <p>Presenting a conceptual draft to possible governmental stakeholders aiming to design efficient programs that effectively resolve existing challenges. </p>
-                    </div>
-
-                    <div class="time_containerB">
-                        <p><span style="font-size: 3.7rem">NOVEMBER</span> 2022</p>
-                    </div>
-
-                    <p class="launchtext">Womenovation @ COP27</p>
-
-                    <div class="timebox">
-                        <p>Womenovation’s philosophy was introduced to the public for the first time during COP27's Gender day. presenting on that day was an ideal first appearance due to Womenovation’s mandate focusing on sustainability and women empowerment </p>
-                    </div>
-
-                    <div class="time_containerC">
-                        <p>18 MARCH 2023</p>
-                    </div>
-
-                    <p  class="launchtext">Womenovation's Launch Event</p>
-
-                    <div class="timebox">
-                        <p> The role of art and innovation in sustainable development was the theme of Womenovation’s launch that brougt togeter a diversity of distttinguished speakers and audiences. The ceremony was followed by an art and fashion exhibition of Egypt’s finest designers and gained extensive  media coverage.</p>
-                    </div>
-
-                    <!-- <div class="timetimecontainer">
-                        <div class="item">
-                            <div class="time_containerC">
-                                <p>18 MARCH 2023</p>
+                            <div class="swiper-slide">
+                                <div class="woocomerce__hero-item"
+                                     style="background-image: url(assets/imgs/connect.png);">
+                                    <div class="woocomerce__hero-content">
+                                        <h1 class="woocomerce__hero-htitle woocomerce__hero-htitle-bg">
+                                            CONNECT
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="woocomerce__hero-item"
+                                     style="background-image: url(assets/imgs/inspire.png);">
+                                    <div class="woocomerce__hero-content">
+                                        <h1 class="woocomerce__hero-htitle1 woocomerce__hero-htitle-bg">
+                                            INSPIRE
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="woocomerce__hero-item"
+                                     style="background-image: url(assets/imgs/innovate.png);">
+                                    <div class="woocomerce__hero-content">
+                                        <h1 class="woocomerce__hero-htitle woocomerce__hero-htitle-bg">
+                                            INNOVATE
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="woocomerce__hero-item"
+                                     style="background-image: url(assets/imgs/advocate.png);">
+                                    <div class="woocomerce__hero-content">
+                                        <h1 class="woocomerce__hero-htitle woocomerce__hero-htitle-bg">
+                                            ADVOCATE
+                                        </h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <p class="launchtext"> Womenovation launches!</p>
+
+                        <!-- If we need navigation buttons -->
+                        <!--<div class="woocomerce__hero-prev"><img src="assets/imgs/woocomerce/hero-prev.png" alt=""></div>
+                        <div class="woocomerce__hero-next"><img src="assets/imgs/woocomerce/hero-right.png" alt=""></div>-->
+                    </div>
+                </div>
+                <!-- /woocomerce Slider -->
+                <section class="blog__area-6 blog__animation">
+                    <div class="container g-0 line pt-150 pb-110">
+                        <span class="line-3"></span>
+                        <div class="row">
+                            <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
+                                <div class="sec-title-wrapper">
+                                    <h2 class="sec-title-2 animation__char_come">
+                                        ABOUT US
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
+                                <div class="blog__text">
+                                    <p class="animate_content">
+                                        The Womenovation Foundation is a non-profit organization dedicated to accelerate sustainable development through a specificfocus on gender.
+                                        Our strategy utilizes creative industries indeveloping economic opprtunities for women through creating entrepreneurship and
+                                        decent work opportunities. We also collaborate with creative artists to generate content and curte events that advocate for
+                                        empowering women and strengthen thevalue of gender equality in the society. <br />
+                                        <a href="whoweare.html#overview" class="blog__btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeboxC">
-                        <p>an event displaying the finest art productions gathering government institutions, artists, academics, civil society organizations, private sector companies gained extensive coverage and played an essential role in womenovation's visibility today</p>
-                    </div> -->
-
+                </section>
+                <!-- baner  -->
+                <div class="video__area about__img-2">
+                    <img src="assets/imgs/home-7/1.jpg" alt="Video Image" data-speed="0.2">
+                    <!--<video src="assets/imgs/video/intro.m4v" type="video/m4v" loop muted autoplay playsinline data-speed="0.2"></video>-->
+                    <!--<video name="media" loop muted autoplay playsinline data-speed="0.2">
+                        <source src="https://rr4---sn-4g5ednde.c.drive.google.com/videoplayback?expire=1701287599&amp;ei=f2xnZZS4LOb0u7AP1ee6uAE&amp;ip=197.53.214.107&amp;id=3064bc8943d4bde8&amp;itag=18&amp;source=webdrive&amp;requiressl=yes&amp;xpc=EghonaK1InoBAQ==&amp;ttl=transient&amp;susc=dr&amp;driveid=15StmP2OLMyAhcREYC5PWcbVRBX07_1Iv&amp;app=explorer&amp;eaua=FeBO4f3VXs4&amp;mime=video/mp4&amp;vprv=1&amp;prv=1&amp;dur=135.836&amp;lmt=1701258645270958&amp;subapp=DRIVE_WEB_FILE_VIEWER&amp;txp=0006224&amp;sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&amp;sig=ANLwegAwRgIhAOOJH2CxLrf35TeHpYeHg5tij3A5ZB9OYoByENXtg1tdAiEA6uR0shKwaAIFvHME_5Rt75DlXtJ9YDFXUGBBuwGsp50=&amp;cpn=DvPK11wTKgfXzt2A&amp;c=WEB_EMBEDDED_PLAYER&amp;cver=1.20231126.00.00&amp;redirect_counter=1&amp;rm=sn-hgnls76&amp;fexp=24350045&amp;req_id=4a82d2f28c43a3ee&amp;cms_redirect=yes&amp;cmsv=e&amp;mh=wz&amp;mm=34&amp;mn=sn-4g5ednde&amp;ms=ltu&amp;mt=1701276540&amp;mv=m&amp;mvi=4&amp;pl=18&amp;lsparams=mh,mm,mn,ms,mv,mvi,pl&amp;lsig=AM8Gb2swRQIga296VeldVWjt9sG7nQtsMXcd2DLU2r9kxOoT9yD0ieICIQDY0zquxoK-2eeTj-PnUrCcUv9yImJO_LOyLQfB-fqzJA%3D%3D" type="video/mp4">
+                    </video>-->
                 </div>
-            </div>
-        </section>
-    </main>
+                <!-- /baner  -->
+                <!-- OUR Work area start -->
+                <section class="blog__area-3 pb-100 blog__animation">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-xxl-12">
+                                <div class="sec-title-wrapper text-anim pt-100">
+                                    <h3 class="sec-title title-anim">OUR WORK </h3>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                <article class="blog__item-3">
+                                    <div class="blog__img-wrapper-3">
+                                        <a href="whatwedo.html#innovation">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/blog/3/1.jpg" alt="Blog Thumbnail">
+                                                <img class="image-box__item" src="assets/imgs/blog/3/1.jpg" alt="BLog Thumbnail">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog__info-3">
+                                        <h5 class="testimonial__name-4">Promoting Innovation</h5>
+                                        <p>
 
-    <footer id="footer" class="footer">
-    </footer>
+                                            Womenovation’s first project
+                                            Promoting Innovation
+                                            (PI)
+                                            aims to identify talents in the design industry, with a focus on fashion during its first phase.
+                                            PI’s strategy aims to supports entrepreneurs in growing their projects through a variety of services including local
+                                            and global marketing, shifting to sustainable production, business development
 
+                                        </p>
+                                        <a href="whatwedo.html#innovation" class="blog__btn">
+                                            Read More <span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
 
-    <script src="https://kit.fontawesome.com/39f166e9f2.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                <article class="blog__item-3">
+                                    <div class="blog__img-wrapper-3">
+                                        <a href="whatwedo.html#innovation">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/blog/3/4.png" alt="Blog Thumbnail">
+                                                <img class="image-box__item" src="assets/imgs/blog/3/4.png" alt="BLog Thumbnail">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog__info-3">
+                                        <h5 class="testimonial__name-4">The Egyptian Women’s Museum</h5>
+                                        <p>
 
-    
-    <script>
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
+                                            For
+                                            thousands of years, Egyptian women have beena global inspiration to the world.
+                                            In an attempt to document their achievements and success
+                                            over thepast century, Womenovaton initiated the Museum’s concept in partnership with the National Council for Women (NCW)
 
-            loader.classList.add("loader--hidden");
-        })
+                                        </p>
+                                        <a href="whatwedo.html#innovation" class="blog__btn">
+                                            Read More <span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- OUR Work area end -->
+                <!-- NEWS area start -->
+                <section class="blog__area-7 blog__animation">
+                    <div class="container g-0 pb-140">
+                        <div class="row">
+                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+                                <div class="sec-title-wrapper">
+                                    <h3 class="sec-title title-anim">News</h3>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <article class="blog__item">
+                                    <div class="blog__img-wrapper">
+                                        <a href="blog-details.html">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/5.png" alt="">
+                                                <img class="image-box__item" src="assets/imgs/5.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4 class="blog__meta">24 December 2023</h4>
+                                    <h5 class="testimonial__name-4">PI @ AUC: ANNOUNCING WINNERS</h5>
+                                    <p class="blog__title-7">
+                                        A jury of marketing communication experts and
+                                        Womenovation’s Board took the responsibility of reviewing the students’ work.
 
-        $(function(){
-            $('#footer').load('common_components/footer.html')
-        })
-    </script>
+                                    </p>
+                                    <a href="whatwedo.html#innovation" class="blog__btn">
+                                        Read More <span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </article>
+                            </div>
 
-    
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <article class="blog__item">
+                                    <div class="blog__img-wrapper">
+                                        <a href="whatwedo.html#innovation">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/18.png" alt="">
+                                                <img class="image-box__item" src="assets/imgs/18.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4 class="blog__meta">6 December 2023</h4>
+                                    <h5 class="testimonial__name-4">PI @ AUC: MASTERING THE ART OF BRANDING</h5>
+                                    <p class="blog__title-7">
+                                        Womenovation‘s team attended 21 branding presentations,
+                                        theoutput of more than a month of hard work and creative ideas.
+
+                                    </p>
+                                    <a href="whatwedo.html#innovation" class="blog__btn">
+                                        Read More <span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </article>
+                            </div>
+
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <article class="blog__item">
+                                    <div class="blog__img-wrapper">
+                                        <a href="whatwedo.html#innovation">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/19.png" alt="Blog Thumbnail">
+                                                <img class="image-box__item" src="assets/imgs/19.png" alt="BLog Thumbnail">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4 class="blog__meta">8 November 2023</h4>
+                                    <h5 class="testimonial__name-4">PI @ AUC: A BRAND NAME CAN EARN GLAM & FAME</h5>
+                                    <p class="blog__title-7">
+                                        Womenovation’s second presence on AUC’s campus aimed to selectand agree on a brand name for PI’s concept store.
+
+                                    </p>
+                                    <a href="whatwedo.html#innovation" class="blog__btn">
+                                        Read More <span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </article>
+                            </div>
+
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <article class="blog__item">
+                                    <div class="blog__img-wrapper">
+                                        <a href="whatwedo.html#innovation">
+                                            <div class="img-box">
+                                                <img class="image-box__item" src="assets/imgs/6.png" alt="">
+                                                <img class="image-box__item" src="assets/imgs/6.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4 class="blog__meta">1 November 2023</h4>
+                                    <h5 class="testimonial__name-4">PI @ AUC: WOMENOVATION COLLABORATES WITH AUC‘SDEPARTMENT OF ART</h5>
+                                    <p class="blog__title-7">
+                                        In collaboration with our strategic partner AlexBank, Womenovation.
+                                    </p>
+                                    <a href="whatwedo.html#innovation" class="blog__btn">
+                                        Read More <span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- NEWS area end -->
+                <!-- Brand area start -->
+                <section class="brand__area">
+                    <div class="container pt-140 pb-140">
+                        <div class="row">
+                            <div class="col-xxl-12">
+                                <h2 class="brand__title-3 title-anim">
+                                    Our Partners
+                                </h2>
+                                <div class="brand__list-3">
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/9.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/7.png" alt="Brand Logo">
+                                    </div>
+                                    <div class="brand__item-2 fade_bottom">
+                                        <img src="assets/imgs/brand/8.png" alt="Brand Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Brand area end -->
+
+            </main>
+
+            <!-- Footer area start -->
+            <footer class="footer__area-6">
+                <div class="container g-0 line_4">
+                    <div class="line-col-4">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="footer__top-6 pt-100">
+                                <div class="footer__item-6">
+                                    <img class="footer__logo logo-light" src="assets/imgs/logo/site-logo-white-2.png" alt="Footer Logo">
+                                    <img class="footer__logo logo-dark" src="assets/imgs/logo/logo-black.png" alt="Footer Logo">
+                                    <p>
+                                        The Womenovation Foundation is a non-profit organization dedicated
+                                        to accelerate sustainable development through a specificfocus on gender.
+                                    </p>
+                                    <ul class="footer__social-6">
+                                        <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                                        <li><a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">Information</h2>
+                                    <ul class="footer__link-6">
+                                        <li><a href="whoweare.html">About Company</a></li>
+                                        <li><a href="get.html">Career</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">Contact Us</h2>
+                                    <ul class="footer__info-6">
+                                        <li>9 Hussein Ahmed Rashad St., Dokki - Giza, Egypt.</li>
+                                        <li><a href="tel:201550005555" class="phone">(+2) 01550005555 </a></li>
+                                        <li><a href="mailto:info@buildyexample.com">info@womenovation.org</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__item-6">
+                                    <h2 class="footer__item-title">newsletter</h2>
+                                    <form action="#">
+                                        <div class="footer__newsletter-6">
+                                            <input type="email" name="email" required placeholder="Enter your email">
+                                            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="footer__chekbox">
+                                            <input type="checkbox" id="check_box" name="checkbox">
+                                            <label>I’m okay with getting emails and having that activity and privacy policy.</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="footer__btm-6">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
+                                        <div class="footer__copyright-6">
+                                            <p>
+                                                © 2023 | Alrights reserved by <a href="https://codid.net/" target="_blank">{codid;}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
+                                        <div class="footer__nav">
+                                            <ul class="footer-menu menu-anim">
+                                                <li><a href="whoweare.html">Who WE Are</a></li>
+                                                <li><a href="whatwedo.html">What WE Do</a></li>
+                                                <li><a href="contact.html">contact</a></li>
+                                                <li><a href="get.html">Get Involved</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer area end -->
+
+        </div>
+    </div>
+
+    <!-- All JS files -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src='https://qmixi.github.io/slide-nav/dist/slideNav.js'></script>
+    <script src="assets/js//script.js"></script>
+
 </body>
+
 </html>
