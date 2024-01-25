@@ -5607,7 +5607,7 @@ img {
 /*----------------------------------------*/
 /*  11. CURSOR CSS START
 /*----------------------------------------*/
-.cursor {
+/* .cursor {
     position: fixed;
     left: 0;
     pointer-events: none;
@@ -5767,7 +5767,7 @@ img {
     #client_cursor {
         display: none;
     }
-}
+} */
 
 .switcher__area {
     position: relative;
