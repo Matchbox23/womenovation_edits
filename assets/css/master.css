@@ -22610,12 +22610,14 @@ img {
 
 .single__thumb .svgstar {
     position: absolute;
+    max-width: 130px;
     left: 25%;
     top: 18%;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
     .single__thumb .svgstar {
+        max-width: 120px;
         left: 24%;
         top: 15%;
     }
@@ -22623,6 +22625,7 @@ img {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .single__thumb .svgstar {
+        max-width: 120px;
         left: 23%;
         top: 15%;
     }
