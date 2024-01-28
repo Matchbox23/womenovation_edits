@@ -32811,16 +32811,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     padding-top: 40px;
     position: relative;
 }
 
 woocomerce__hero-htitle-bg {
     background-color: #0000005c;
-    width: 120%;
-    margin-bottom: 40px;
-    right: 105px;
+    /* width: 120%; */
+    /* margin-bottom: 40px; */
+    /* right: 105px; */
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -32830,9 +32830,9 @@ woocomerce__hero-htitle-bg {
 
     woocomerce__hero-htitle-bg {
         background-color: #0000005c;
-        width: 120%;
-        margin-bottom: 40px;
-        right: 105px;
+        /* width: 120%; */
+        /* margin-bottom: 40px; */
+        /* right: 105px; */
     }
 }
 
@@ -32844,9 +32844,9 @@ woocomerce__hero-htitle-bg {
 
     woocomerce__hero-htitle-bg {
         background-color: #0000005c;
-        width: 120%;
-        margin-bottom: 40px;
-        right: 105px;
+        /* width: 120%; */
+        /* margin-bottom: 40px; */
+        /* right: 105px; */
     }
 }
 
@@ -32859,9 +32859,9 @@ woocomerce__hero-htitle-bg {
 
     woocomerce__hero-htitle-bg {
         background-color: #0000005c;
-        width: 120%;
+        /* width: 120%;
         margin-bottom: 40px;
-        right: 105px;
+        right: 105px; */
     }
 }
 
@@ -32919,7 +32919,8 @@ woocomerce__hero-htitle-bg {
     /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     font-family: Montserrat;
     margin-bottom: 40px;
-    padding-right: 150px;
+    /* padding-right: 150px; */
+    padding-right: 100px;
     bottom: 30px;
 }
 
@@ -32931,15 +32932,17 @@ woocomerce__hero-htitle-bg {
     /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     font-family: Montserrat;
     margin-bottom: 40px;
-    padding-left: 150px;
+    text-align: right;
+    padding-right: 100px;
+    /* padding-left: 150px; */
     top: 300px;
 }
 
 .woocomerce__hero-htitle-bg {
     background-color: #0000005c;
-    width: 120%;
+    /* width: 120%; */
     margin-bottom: 40px;
-    right: 105px;
+    /* right: 105px; */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
