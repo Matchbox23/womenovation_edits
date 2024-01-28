@@ -2266,7 +2266,7 @@
     spaceBetween: 20,
     loop: true,
     freemode: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     speed: 2000,
     pagination: {
       el: ".pagination",
@@ -2281,10 +2281,10 @@
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       }
     }
   });

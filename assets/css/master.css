@@ -11132,6 +11132,10 @@ img {
     grid-gap: 80px;
 }
 
+.service__detail-content h2{
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .service__detail-content {
         grid-gap: 40px;
@@ -18583,8 +18587,8 @@ img {
 
 @media (max-height: 1365px) {
     .story__text p {
-        padding-top: 30px;
-        padding-bottom: 0;
+        /* padding-top: 30px; */
+        padding-bottom: 20px;
     }
 }
 
