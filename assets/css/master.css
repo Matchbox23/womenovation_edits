@@ -5774,7 +5774,7 @@ img {
     direction: ltr;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
     .switcher__area {
         display: none;
     }
@@ -6211,7 +6211,7 @@ img {
     height: 100%;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     .header__nav-icon-3 {
         display: none;
     }
@@ -6563,30 +6563,36 @@ img {
 .offcanvas__right {
     background-color: var(--black-4);
     padding: 0 50px;
+    padding-top: 100px;
     position: relative;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
     .offcanvas__right {
         padding: 0 30px;
+        padding-top: 100px;
+        
     }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .offcanvas__right {
         padding: 0 30px;
+        padding-top: 100px;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .offcanvas__right {
         padding: 0 30px;
+        padding-top: 100px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .offcanvas__right {
         padding: 0 15px;
+        padding-top: 100px;
     }
 }
 
@@ -15161,132 +15167,172 @@ img {
 /*----------------------------------------*/
 /*  23.Team 2 CSS START
 /*----------------------------------------*/
-.parent {
-    position: relative;
-    height: 990px;
-    width: 1200px;
+@media only screen and (min-width: 1200px){
+    .parent {
+        position: relative;
+        height: 990px;
+        width: 1200px;
+    }
+    
+    .circle {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: url(../imgs/team/art-2026954_1920.png) center center no-repeat;
+        background-size: 1000px 769px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .image-holder {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+        .image-holder:hover {
+            animation-play-state: paused;
+        }
+    
+        .image-holder img {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+        }
+    
+        .image-holder .child1 {
+            top: 220px;
+            left: 240px;
+            position: absolute;
+        }
+    
+        .image-holder .child3 {
+            top: 210px;
+            right: 35%;
+            position: absolute;
+        }
+    
+        .image-holder .child5 {
+            bottom: 42%;
+            right: 25%;
+            position: absolute;
+        }
+    
+        .image-holder .child7 {
+            top: 47%;
+            left: 120px;
+            position: absolute;
+        }
+    
+        .image-holder .child2 {
+            top: 100px;
+            left: 43%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child4 {
+            top: 32%;
+            right: 27%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child6 {
+            bottom: 31%;
+            left: 66%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child8 {
+            top: 33%;
+            left: 140px;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child9 {
+            top: 145px;
+            left: 370px;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child10 {
+            top: 14%;
+            right: 45%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child11 {
+            top: 61%;
+            right: 87%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child12 {
+            top: 71%;
+            right: 46%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .image-holder .child13 {
+            top: 45%;
+            right: 23%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        .modal-trigger {
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            transition: ease .2s;
+        }
 }
 
-.circle {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background: url(../imgs/team/art-2026954_1920.png) center center no-repeat;
-    background-size: 1000px 769px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 1200px){
+    .parent{
+        padding: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .parent h1{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .image-holder{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .image-holder *{
+        width: 50%;
+    }
+    
+    .image-holder img{
+        width: 100%;
+    }
 }
-
-* {
-    box-sizing: border-box;
-}
-
-.image-holder {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-    .image-holder:hover {
-        animation-play-state: paused;
-    }
-
-    .image-holder img {
-        position: absolute;
-        width: 170px;
-        height: 170px;
-    }
-
-    .image-holder .child1 {
-        top: 220px;
-        left: 240px;
-        position: absolute;
-    }
-
-    .image-holder .child3 {
-        top: 210px;
-        right: 35%;
-        position: absolute;
-    }
-
-    .image-holder .child5 {
-        bottom: 42%;
-        right: 25%;
-        position: absolute;
-    }
-
-    .image-holder .child7 {
-        top: 47%;
-        left: 120px;
-        position: absolute;
-    }
-
-    .image-holder .child2 {
-        top: 100px;
-        left: 43%;
-        transform: translateX(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child4 {
-        top: 32%;
-        right: 27%;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child6 {
-        bottom: 31%;
-        left: 66%;
-        transform: translateX(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child8 {
-        top: 33%;
-        left: 140px;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child9 {
-        top: 145px;
-        left: 370px;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child10 {
-        top: 14%;
-        right: 45%;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child11 {
-        top: 61%;
-        right: 87%;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child12 {
-        top: 71%;
-        right: 46%;
-        transform: translateY(-50%);
-        position: absolute;
-    }
-
-    .image-holder .child13 {
-        top: 45%;
-        right: 23%;
-        transform: translateY(-50%);
-        position: absolute;
-    }
 
 @keyframes rotate {
     0% {
@@ -15353,21 +15399,6 @@ img {
 }
 
 
-
-
-
-
-.modal-trigger {
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    transition: ease .2s;
-}
 
 
     .modal-trigger:hover {
