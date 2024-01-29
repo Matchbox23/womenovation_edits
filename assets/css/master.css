@@ -15350,7 +15350,7 @@ img {
 }
 
 .modal-sandbox {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -15371,14 +15371,21 @@ img {
 }
 
 .modal-box {
-    position: relative;
+    position: sticky;
     width: 80%;
     max-width: 920px;
-    top: 65%;
+    top: 0;
+    top: 61%;
     margin: 100px auto;
     animation-name: modalbox;
     animation-duration: .4s;
     animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+@media only screen and (max-width: 1200px){
+    .modal-box{
+        top: 55%;
+    }
 }
 
 .modal-header {
